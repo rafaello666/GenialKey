@@ -1,26 +1,19 @@
 {
   "compilerOptions": {
     "target": "ES2022",
-<<<<<<< HEAD
     "lib": ["ES2022", "DOM"],
     "moduleResolution": "node",
     "rootDir": ".", // set to the project root to encompass both 'client' and 'server'
->>>>>>> 5185817 (feat: add new components and pages for timer, three.js integration, and welcome screen)
     "outDir": "dist",
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "sourceMap": true,
-=======
-    "module": "commonjs",
->>>>>>> 9eb090d (Aktualizacja konfiguracji i porządek w repozytorium)
     "strict": true,
-    "esModuleInterop": true,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true
   },
-<<<<<<< HEAD
   "include": [
     "client/**/*",
     "server/**/*"
@@ -29,9 +22,4 @@
     "node_modules",
     "dist"
   ]
->>>>>>> 5185817 (feat: add new components and pages for timer, three.js integration, and welcome screen)
-=======
-  "include": ["server/**/*", "client/**/*"],
-  "exclude": ["node_modules"]
->>>>>>> 9eb090d (Aktualizacja konfiguracji i porządek w repozytorium)
 }
