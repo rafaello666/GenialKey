@@ -5,11 +5,12 @@
     "build": "turbo run build",
     "dev": "next dev --port 3001",
     "serve": "run-many target=serve projects=server,client parallel",
-    "lint": "turbo run lint",
+    "lint": "next lint",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
     "check-types": "turbo run check-types"
   },
   "devDependencies": {
+    "eslint-config-next": "^15.2.1",
     "prettier": "^3.5.3",
     "turbo": "^2.4.4",
     "typescript": "5.8.2"
@@ -20,9 +21,5 @@
   "engines": {
     "node": ">=18"
   },
-  "packageManager": "npm@11.2.0",
-  "workspaces": [
-    "apps/*",
-    "packages/*"
-  ]
+  "packageManager": "npm@11.2.0"
 }

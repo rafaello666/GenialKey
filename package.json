@@ -4,7 +4,6 @@
         "server"
     ],       
     
-    
         "name": "server-new",
         "version": "1.0.0",
         "description": "Backend w TypeScript z Express",
@@ -27,28 +26,17 @@
           "test:debug": "node --inspect-brk -r tsconfig-paths/register -r ts-node/register node_modules/.bin/jest --runInBand",
           "test:e2e": "jest --config ./test/jest-e2e.json",
           "dev": "nodemon --exec ts-node src/index.ts",
-          "pre-commit": "lint-staged",
+          "pre-commit": "lint-staged"
+        },    
+        "lint-staged": {
+          "*.{ts,tsx,js,jsx}": [
+            "eslint --fix",
+            "prettier --write"
+          ],      
+          "*.{css,scss}": "prettier --write",
+          "*.md": "prettier --write"
         },
-        
-          "lint-staged": 
-         { "*.{ts,tsx,js,jsx}": ["eslint --fix", "prettier --write"]
-    },
-          "*.{css,scss}": ["prettier --write"],
-          "*.md": ["prettier --write"]
-        
-},      
-        
-            
-   { "*.{js,jsx}": {
-      "eslint --fix"
-      "prettier --write"},
-   },
-
-   
-          
-          
-        {
-        "dependencies": {
+          "dependencies": {
           "@nestjs/common": "^11.0.1",
           "@nestjs/core": "^11.0.1",
           "@nestjs/jwt": "^11.0.0",
@@ -99,7 +87,7 @@
           "typescript": "^5.8.2",
           "typescript-eslint": "^8.20.0",
           "prisma": "^6.4.1",
-          "husky": "^8.0.0",
+          "husky": "^8.0.0"
         },
         "jest": {
           "moduleFileExtensions": [
@@ -112,11 +100,9 @@
           "transform": {
             "^.+\\.(t|j)s$": "ts-jest"
           },
-          "collectCoverageFrom": [
-            "**/*.(t|j)s"
-          ],
+          "collectCoverageFrom": "**/*.(t|j)s",
           "coverageDirectory": "../coverage",
           "testEnvironment": "node"
         }
       }
-      
+
