@@ -1,7 +1,7 @@
 // pages/lessons/timer.tsx
 import React from 'react';
-import AnimatedNumber from './AnimatedNumber';
-import { useTimer } from '../server/my-typing-app/apps/client/hooks/useTimer';
+import AnimatedNumber from '../../components/AnimatedNumber';
+import { useTimer } from '../../hooks/useTimer';
 
 const TimerPage: React.FC = () => {
   const { seconds, start } = useTimer(60);

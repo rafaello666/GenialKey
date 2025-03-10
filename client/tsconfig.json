@@ -1,13 +1,14 @@
 {
   "compilerOptions": {
-    "module": "ESNext",
-    "target": "ES2021",
-    "moduleResolution": "Node",
     "jsx": "preserve",
-    "allowJs": true,
+    "target": "esnext",
+    "module": "ESNext",
+    "moduleResolution": "Node",
     "esModuleInterop": true,
-    "skipLibCheck": true,
+    "allowJs": true,
     "strict": true,
+    "skipLibCheck": true,
+    "resolveJsonModule": true,
     "lib": [
       "dom",
       "dom.iterable",
@@ -15,13 +16,10 @@
     ],
     "noEmit": true,
     "incremental": true,
-    "resolveJsonModule": true,
     "isolatedModules": true
   },
   "include": [
-    "next-env.d.ts",
-    "**/*.ts",
-    "**/*.tsx"
+    "**/*"
   ],
   "exclude": [
     "node_modules"
