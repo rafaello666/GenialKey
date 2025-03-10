@@ -2,8 +2,7 @@
 
 import { Injectable, ConflictException, NotFoundException } from '@nestjs/common';
 import { PrismaService } from '../prisma.service';
-import { User } from '@prisma/client';
-import { UserRole } from '@prisma/client';
+import { User, UserRole } from '@prisma.client';
 import * as bcrypt from 'bcrypt';
 
 @Injectable()
@@ -12,7 +11,7 @@ export class UsersService {
 
   /**
    * Tworzy nowego użytkownika.
-   * Hasło jest hashowane za pomocą bcrypt, np. z saltRounds = 10.
+   * Hasło jest hashowane za pomocą bcrypt z saltRounds = 10.
    */
   async createUser(
     username: string,
@@ -26,7 +25,7 @@ export class UsersService {
 
     // Hashowanie hasła
     const saltRounds = 10;
-    const passwordHash = await bcrypt.hash(plainPassword, 10, saltRounds);
+    const passwordHash = await bcrypt.hash(plainPassword, saltRounds);
 
     return this.prisma.user.create({
       data: {
@@ -34,20 +33,19 @@ export class UsersService {
         passwordHash,
         role,
       },
-    }),
-  };
+    });
+  }
 
   /**
    * Znajduje użytkownika po nazwie użytkownika (np. do logowania).
    * Zwraca pełen obiekt User (w tym passwordHash),
-   * dlatego w kontrolerze/strategii trzeba uważać,
-   * by nie zwracać hasła "na zewnątrz".
+   * dlatego w kontrolerze/strategii trzeba uważać, by nie zwracać hasła "na zewnątrz".
    */
   async findByUsername(username: string): Promise<User | null> {
     return this.prisma.user.findUnique({
       where: { username },
     });
-  };
+  }
 
   /**
    * Znajduje użytkownika po ID.
@@ -56,11 +54,11 @@ export class UsersService {
     return this.prisma.user.findUnique({
       where: { id },
     });
-  };
+  }
 
   /**
    * Prosta aktualizacja nazwy użytkownika lub hasła.
-   * Przykład – jeśli chcesz umożliwić zmianę hasła, zhashuj je ponownie.
+   * Jeśli chcesz umożliwić zmianę hasła, zhashuj je ponownie.
    */
   async updateUser(id: number, username?: string, newPassword?: string): Promise<User> {
     // Wczytanie użytkownika
@@ -74,7 +72,7 @@ export class UsersService {
     if (newPassword) {
       const saltRounds = 10;
       dataToUpdate.passwordHash = await bcrypt.hash(newPassword, saltRounds);
-    };
+    }
 
     return this.prisma.user.update({
       where: { id },
@@ -83,11 +81,12 @@ export class UsersService {
   }
 
   /**
-   * Usunięcie użytkownika
+   * Usunięcie użytkownika.
    */
   async deleteUser(id: number): Promise<User> {
     return this.prisma.user.delete({
       where: { id },
     });
-  };
+  }
 }
+

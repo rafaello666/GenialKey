@@ -23,4 +23,3 @@ function RootLayout({ children, }) {
       </body>
     </html>);
 }
-//# sourceMappingURL=layout.js.map

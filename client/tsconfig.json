@@ -1,31 +1,35 @@
 {
+  "extends": "../tsconfig.json",
   "compilerOptions": {
-    "target": "es5",
-    "lib": [
-      "dom",
-      "dom.iterable",
-      "esnext"
-    ],
+    // Next.js rekomenduje 'esnext' dla modułów
+    "module": "esnext",
+
+    // Używamy JSX w plikach .tsx
+    "jsx": "preserve",
+
+    // Biblioteki - Next.js korzysta m.in. z "DOM" i "ESNext"
+    "lib": ["dom", "dom.iterable", "esnext"],
+
+    // Pozwalamy na import plików JS (np. jeśli występują)
     "allowJs": true,
+
+    // W środowisku dev Next.js i tak nie generuje plików .js w outDir
+    "noEmit": true,
+
+    // Podobnie jak w głównym tsconfig
     "skipLibCheck": true,
-    "esModuleInterop": true,
-    "allowSyntheticDefaultImports": true,
     "strict": true,
     "forceConsistentCasingInFileNames": true,
-    "noFallthroughCasesInSwitch": true,
-    "module": "esnext",
+
+    // Używane do importowania modułów (Node / Next)
     "moduleResolution": "node",
     "resolveJsonModule": true,
+
+    // Warto mieć włączone, jeśli edytujemy 'ts' plik po pliku
     "isolatedModules": true,
-    "noEmit": true,
-    "jsx": "preserve",
     "incremental": true
   },
-  "include": [
-    "src",
-    "components"
-  ],
-  "exclude": [
-    "node_modules"
-  ]
+  // Next.js automatycznie generuje plik next-env.d.ts
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "next.config.js"],
+  "exclude": ["node_modules", ".next", "out", "**/*.spec.ts"]
 }
