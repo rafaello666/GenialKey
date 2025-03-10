@@ -1,7 +1,9 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.default = generator;
+// Learn more about Turborepo Generators at https://turbo.build/repo/docs/core-concepts/monorepos/code-generation
 function generator(plop) {
+    // A simple generator to add a new React component to the internal UI library
     plop.setGenerator("react-component", {
         description: "Adds a new react component",
         prompts: [
@@ -26,4 +28,3 @@ function generator(plop) {
         ],
     });
 }
-//# sourceMappingURL=config.js.map

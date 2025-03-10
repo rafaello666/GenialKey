@@ -1,8 +1,11 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.metadata = void 0;
 exports.default = RootLayout;
-const local_1 = require("next/font/local");
+const local_1 = __importDefault(require("next/font/local"));
 require("./globals.css");
 const geistSans = (0, local_1.default)({
     src: "./fonts/GeistVF.woff",
@@ -23,4 +26,3 @@ function RootLayout({ children, }) {
       </body>
     </html>);
 }
-//# sourceMappingURL=layout.js.map

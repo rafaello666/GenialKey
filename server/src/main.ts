@@ -17,3 +17,15 @@ export class CreateCourseDto {
 create(@Body() dto: CreateCourseDto) {
   return this.courseService.createCourse(dto.title, dto.description);
 }
+app.useGlobalPipes(new ValidationPipe({ whitelist: true }));
+app.enableCors();
+app.use(helmet());
+import { NestFactory } from '@nestjs/core';
+import { AppModule } from './app.module';
+
+async function bootstrap() {
+  const app = await NestFactory.create(AppModule);
+  await app.listen(3000);
+}
+bootstrap();
+

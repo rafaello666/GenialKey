@@ -1,6 +1,6 @@
 // src/users/users.controller.ts
 import { Controller, Get, Post, Param, Body, Patch, ParseIntPipe, Delete } from '@nestjs/common';
-import { UsersService } from './users.service';
+import { UsersService } from './user.service';
 import { UserRole } from './user.model'; // adjust path as needed
 
 @Controller('users')

@@ -1,5 +1,5 @@
 {
-      "name": "super-typer-server",
+      "name": "genialkey-server",
     "version": "1.0.0",
   "description": "Backend w TypeScript z Express",
   "author": "Rafik",
@@ -8,19 +8,19 @@
   "main": "dist/index.js",
   "type": "commonjs",
   "scripts": {
-    "build": "next build",
+    "build": "nest build",
     "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
-    "start": "next start",
+    "start": "nest start",
     "start:dev": "nest start --watch",
     "start:debug": "nest start --debug --watch",
     "start:prod": "node dist/main",
-    "lint": "eslint \"{src,apps,libs,test}/**/*.ts\" --fix",
-    "test": "jest",
+    "lint": "eslint \"{src,apps,libs,test}/**/*.ts\" --fix && eslint . --ext .ts && eslint src --ext .ts --config .eslintrc.json",
+    "test": "jest && echo \"(server) No tests specified\" && exit 0",
     "test:watch": "jest --watch",
     "test:cov": "jest --coverage",
     "test:debug": "node --inspect-brk -r tsconfig-paths/register -r ts-node/register node_modules/.bin/jest --runInBand",
     "test:e2e": "jest --config ./test/jest-e2e.json",
-    "dev": "nodemon --exec ts-node src/index.ts next dev",
+    "dev": "nest start --watch",
     "pre-commit": "lint-staged"
   },
   "dependencies": {

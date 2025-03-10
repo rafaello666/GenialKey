@@ -9,4 +9,3 @@ function Card({ className, title, children, href, }) {
       <p>{children}</p>
     </a>);
 }
-//# sourceMappingURL=card.js.map
