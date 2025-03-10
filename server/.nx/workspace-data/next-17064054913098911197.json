@@ -1,0 +1,368 @@
+{
+  "590847049331563407": {
+    "build": {
+      "command": "next build",
+      "options": {
+        "cwd": "my-typing-app/apps/client",
+        "tty": false
+      },
+      "dependsOn": [
+        "^build"
+      ],
+      "cache": true,
+      "inputs": [
+        "default",
+        "^default",
+        {
+          "externalDependencies": [
+            "next"
+          ]
+        }
+      ],
+      "outputs": [
+        "{workspaceRoot}/my-typing-app/apps/client/.next",
+        "{workspaceRoot}/my-typing-app/apps/client/.next/!(cache)"
+      ]
+    },
+    "dev": {
+      "command": "next dev",
+      "options": {
+        "cwd": "my-typing-app/apps/client"
+      }
+    },
+    "start": {
+      "command": "next start",
+      "options": {
+        "cwd": "my-typing-app/apps/client"
+      },
+      "dependsOn": [
+        "build"
+      ]
+    },
+    "serve-static": {
+      "command": "next start",
+      "options": {
+        "cwd": "my-typing-app/apps/client"
+      },
+      "dependsOn": [
+        "build"
+      ]
+    },
+    "build-deps": {
+      "dependsOn": [
+        "^build"
+      ]
+    },
+    "watch-deps": {
+      "dependsOn": [
+        "build-deps"
+      ],
+      "command": "npx nx watch --projects client --includeDependentProjects -- npx nx build-deps client"
+    }
+  },
+  "5958937399378953860": {
+    "build": {
+      "command": "next build",
+      "options": {
+        "cwd": "my-typing-app/apps/docs",
+        "tty": false
+      },
+      "dependsOn": [
+        "^build"
+      ],
+      "cache": true,
+      "inputs": [
+        "default",
+        "^default",
+        {
+          "externalDependencies": [
+            "next"
+          ]
+        }
+      ],
+      "outputs": [
+        "{workspaceRoot}/my-typing-app/apps/docs/.next",
+        "{workspaceRoot}/my-typing-app/apps/docs/.next/!(cache)"
+      ]
+    },
+    "dev": {
+      "command": "next dev",
+      "options": {
+        "cwd": "my-typing-app/apps/docs"
+      }
+    },
+    "start": {
+      "command": "next start",
+      "options": {
+        "cwd": "my-typing-app/apps/docs"
+      },
+      "dependsOn": [
+        "build"
+      ]
+    },
+    "serve-static": {
+      "command": "next start",
+      "options": {
+        "cwd": "my-typing-app/apps/docs"
+      },
+      "dependsOn": [
+        "build"
+      ]
+    },
+    "build-deps": {
+      "dependsOn": [
+        "^build"
+      ]
+    },
+    "watch-deps": {
+      "dependsOn": [
+        "build-deps"
+      ],
+      "command": "npx nx watch --projects docs --includeDependentProjects -- npx nx build-deps docs"
+    }
+  },
+  "8413570230813658449": {
+    "build": {
+      "command": "next build",
+      "options": {
+        "cwd": "my-typing-app/apps/web",
+        "tty": false
+      },
+      "dependsOn": [
+        "^build"
+      ],
+      "cache": true,
+      "inputs": [
+        "default",
+        "^default",
+        {
+          "externalDependencies": [
+            "next"
+          ]
+        }
+      ],
+      "outputs": [
+        "{workspaceRoot}/my-typing-app/apps/web/.next",
+        "{workspaceRoot}/my-typing-app/apps/web/.next/!(cache)"
+      ]
+    },
+    "dev": {
+      "command": "next dev",
+      "options": {
+        "cwd": "my-typing-app/apps/web"
+      }
+    },
+    "start": {
+      "command": "next start",
+      "options": {
+        "cwd": "my-typing-app/apps/web"
+      },
+      "dependsOn": [
+        "build"
+      ]
+    },
+    "serve-static": {
+      "command": "next start",
+      "options": {
+        "cwd": "my-typing-app/apps/web"
+      },
+      "dependsOn": [
+        "build"
+      ]
+    },
+    "build-deps": {
+      "dependsOn": [
+        "^build"
+      ]
+    },
+    "watch-deps": {
+      "dependsOn": [
+        "build-deps"
+      ],
+      "command": "npx nx watch --projects web --includeDependentProjects -- npx nx build-deps web"
+    }
+  },
+  "5980901297102357919": {
+    "build": {
+      "command": "next build",
+      "options": {
+        "cwd": "my-typing-app/apps/client",
+        "tty": false
+      },
+      "dependsOn": [
+        "^build"
+      ],
+      "cache": true,
+      "inputs": [
+        "default",
+        "^default",
+        {
+          "externalDependencies": [
+            "next"
+          ]
+        }
+      ],
+      "outputs": [
+        "{workspaceRoot}/my-typing-app/apps/client/.next",
+        "{workspaceRoot}/my-typing-app/apps/client/.next/!(cache)"
+      ]
+    },
+    "dev": {
+      "command": "next dev",
+      "options": {
+        "cwd": "my-typing-app/apps/client"
+      }
+    },
+    "start": {
+      "command": "next start",
+      "options": {
+        "cwd": "my-typing-app/apps/client"
+      },
+      "dependsOn": [
+        "build"
+      ]
+    },
+    "serve-static": {
+      "command": "next start",
+      "options": {
+        "cwd": "my-typing-app/apps/client"
+      },
+      "dependsOn": [
+        "build"
+      ]
+    },
+    "build-deps": {
+      "dependsOn": [
+        "^build"
+      ]
+    },
+    "watch-deps": {
+      "dependsOn": [
+        "build-deps"
+      ],
+      "command": "npx nx watch --projects client --includeDependentProjects -- npx nx build-deps client"
+    }
+  },
+  "7563087125483457818": {
+    "build": {
+      "command": "next build",
+      "options": {
+        "cwd": "my-typing-app/apps/docs",
+        "tty": false
+      },
+      "dependsOn": [
+        "^build"
+      ],
+      "cache": true,
+      "inputs": [
+        "default",
+        "^default",
+        {
+          "externalDependencies": [
+            "next"
+          ]
+        }
+      ],
+      "outputs": [
+        "{workspaceRoot}/my-typing-app/apps/docs/.next",
+        "{workspaceRoot}/my-typing-app/apps/docs/.next/!(cache)"
+      ]
+    },
+    "dev": {
+      "command": "next dev",
+      "options": {
+        "cwd": "my-typing-app/apps/docs"
+      }
+    },
+    "start": {
+      "command": "next start",
+      "options": {
+        "cwd": "my-typing-app/apps/docs"
+      },
+      "dependsOn": [
+        "build"
+      ]
+    },
+    "serve-static": {
+      "command": "next start",
+      "options": {
+        "cwd": "my-typing-app/apps/docs"
+      },
+      "dependsOn": [
+        "build"
+      ]
+    },
+    "build-deps": {
+      "dependsOn": [
+        "^build"
+      ]
+    },
+    "watch-deps": {
+      "dependsOn": [
+        "build-deps"
+      ],
+      "command": "npx nx watch --projects docs --includeDependentProjects -- npx nx build-deps docs"
+    }
+  },
+  "11233881470464872318": {
+    "build": {
+      "command": "next build",
+      "options": {
+        "cwd": "my-typing-app/apps/web",
+        "tty": false
+      },
+      "dependsOn": [
+        "^build"
+      ],
+      "cache": true,
+      "inputs": [
+        "default",
+        "^default",
+        {
+          "externalDependencies": [
+            "next"
+          ]
+        }
+      ],
+      "outputs": [
+        "{workspaceRoot}/my-typing-app/apps/web/.next",
+        "{workspaceRoot}/my-typing-app/apps/web/.next/!(cache)"
+      ]
+    },
+    "dev": {
+      "command": "next dev",
+      "options": {
+        "cwd": "my-typing-app/apps/web"
+      }
+    },
+    "start": {
+      "command": "next start",
+      "options": {
+        "cwd": "my-typing-app/apps/web"
+      },
+      "dependsOn": [
+        "build"
+      ]
+    },
+    "serve-static": {
+      "command": "next start",
+      "options": {
+        "cwd": "my-typing-app/apps/web"
+      },
+      "dependsOn": [
+        "build"
+      ]
+    },
+    "build-deps": {
+      "dependsOn": [
+        "^build"
+      ]
+    },
+    "watch-deps": {
+      "dependsOn": [
+        "build-deps"
+      ],
+      "command": "npx nx watch --projects web --includeDependentProjects -- npx nx build-deps web"
+    }
+  }
+}
