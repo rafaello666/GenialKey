@@ -1,5 +1,5 @@
 {
-  "name": "genialkey",
+  "name": "super-typer-monorepo",
   "version": "1.0.0",
   "private": true,
   "workspaces": [
@@ -14,6 +14,7 @@
   },
   "devDependencies": {
 <<<<<<< HEAD
+<<<<<<< HEAD
     "@types/bcrypt": "^5.0.2",
     "@types/cors": "^2.8.17",
     "@types/express": "^5.0.0",
@@ -22,10 +23,11 @@
     "@types/passport-local": "^1.0.38",
 =======
 >>>>>>> 5185817 (feat: add new components and pages for timer, three.js integration, and welcome screen)
+=======
+>>>>>>> 9eb090d (Aktualizacja konfiguracji i porządek w repozytorium)
     "concurrently": "^8.2.2",
-    "eslint": "^9.21.0",
-    "eslint-config-next": "^15.2.1",
-    "prettier": "^3.5.3",
-    "typescript": "^5.8.2"
+    "typescript": "^5.2.2",
+    "eslint": "^8.45.0",
+    "prettier": "^3.5.0"
   }
 }

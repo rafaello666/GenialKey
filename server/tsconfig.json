@@ -1,23 +1,23 @@
 {
   "compilerOptions": {
     "module": "CommonJS",
-<<<<<<< HEAD
-    "target": "esnext",
-=======
     "target": "ES2021",
+<<<<<<< HEAD
 >>>>>>> 30cd79a (Update subproject commit to indicate a dirty state)
+=======
+>>>>>>> 9eb090d (Aktualizacja konfiguracji i porządek w repozytorium)
     "moduleResolution": "Node",
     "outDir": "dist",
     "rootDir": "src",
     "strict": true,
     "esModuleInterop": true,
-<<<<<<< HEAD
+    "skipLibCheck": true,
+    "resolveJsonModule": true,
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
-    "skipLibCheck": true,
-    "lib": ["dom", "dom.iterable", "esnext"],
-    "jsx": "preserve"
+    "types": ["node"] // Add this line to restrict implicit type inclusion
   },
+<<<<<<< HEAD
   "include": ["**/*"],
   "exclude": ["node_modules"]
 =======
@@ -26,4 +26,8 @@
   "include": ["src/**/*"],
   "exclude": ["node_modules", "dist"]
 >>>>>>> 30cd79a (Update subproject commit to indicate a dirty state)
+=======
+  "include": ["src/**/*.ts"],
+  "exclude": ["node_modules", "dist", "**/*.spec.ts"]
+>>>>>>> 9eb090d (Aktualizacja konfiguracji i porządek w repozytorium)
 }
