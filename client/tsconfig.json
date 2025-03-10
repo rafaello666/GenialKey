@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+<<<<<<< HEAD
     "jsx": "preserve",
     "target": "esnext",
     "module": "ESNext",
@@ -20,6 +21,30 @@
   },
   "include": [
     "**/*"
+=======
+    "module": "ESNext",
+    "target": "ES2021",
+    "moduleResolution": "Node",
+    "jsx": "preserve",
+    "allowJs": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "noEmit": true,
+    "incremental": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true
+  },
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx"
+>>>>>>> 5185817 (feat: add new components and pages for timer, three.js integration, and welcome screen)
   ],
   "exclude": [
     "node_modules"

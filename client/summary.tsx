@@ -8,6 +8,7 @@ interface SummaryProps {
   wpm: number;
   accuracy: number;
 }
+<<<<<<< HEAD
 export const getServerSideProps: GetServerSideProps = async () => {
     // Tu np. fetch z backendu NestJS:
     // const res = await fetch('https://twoja-domena.pl/api/typing-results/last');
@@ -44,6 +45,24 @@ const SummaryScreen: React.FC<SummaryProps> = ({ wpm, accuracy }) => {
     },
   };
 };
+=======
+
+export const getServerSideProps: GetServerSideProps = async () => 
+
+const data = { wpm: 85, accuracy: 94 };
+
+    return {
+      props: {
+        wpm: data.wpm,
+        accuracy: data.accuracy,
+      },
+    };
+  };
+  
+
+const SummaryScreen: React.FC<SummaryProps> = ({ wpm, accuracy }) => {
+
+>>>>>>> 5185817 (feat: add new components and pages for timer, three.js integration, and welcome screen)
 
   return (
     <div className={styles.summaryScreen}>

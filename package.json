@@ -13,12 +13,15 @@
     "test": "npm run test -w server && npm run test -w client"
   },
   "devDependencies": {
+<<<<<<< HEAD
     "@types/bcrypt": "^5.0.2",
     "@types/cors": "^2.8.17",
     "@types/express": "^5.0.0",
     "@types/jest": "^29.5.14",
     "@types/passport-jwt": "^4.0.1",
     "@types/passport-local": "^1.0.38",
+=======
+>>>>>>> 5185817 (feat: add new components and pages for timer, three.js integration, and welcome screen)
     "concurrently": "^8.2.2",
     "eslint": "^9.21.0",
     "eslint-config-next": "^15.2.1",

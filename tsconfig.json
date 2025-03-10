@@ -1,10 +1,17 @@
 {
   "compilerOptions": {
     "module": "CommonJS",
+<<<<<<< HEAD
     "target": "esnext",
     "lib": ["dom", "dom.iterable", "esnext"],
     "moduleResolution": "Node",
     "rootDir": "src",
+=======
+    "target": "ES2022",
+    "lib": ["ES2022", "DOM"],
+    "moduleResolution": "node",
+    "rootDir": ".", // set to the project root to encompass both 'client' and 'server'
+>>>>>>> 5185817 (feat: add new components and pages for timer, three.js integration, and welcome screen)
     "outDir": "dist",
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
@@ -13,10 +20,23 @@
     "sourceMap": true,
     "strict": true,
     "skipLibCheck": true,
+<<<<<<< HEAD
     "forceConsistentCasingInFileNames": true,
     "jsx": "preserve",
     "types": []
   },
   "include": ["src/**/*"],
   "exclude": ["node_modules"]
+=======
+    "forceConsistentCasingInFileNames": true
+  },
+  "include": [
+    "client/**/*",
+    "server/**/*"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist"
+  ]
+>>>>>>> 5185817 (feat: add new components and pages for timer, three.js integration, and welcome screen)
 }

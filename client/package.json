@@ -1,6 +1,9 @@
 {
   "name": "client",
+<<<<<<< HEAD
   "version": "1.0.0",
+=======
+>>>>>>> 5185817 (feat: add new components and pages for timer, three.js integration, and welcome screen)
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -9,6 +12,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+<<<<<<< HEAD
     "@react-three/drei": "^9",
     "@react-three/fiber": "^8",
     "framer-motion": "^11",
@@ -30,5 +34,24 @@
     "eslint": "^8.57.1",
     "eslint-config-next": "^15.2.1",
     "typescript": "^5"
+=======
+    "@react-three/drei": "^10.0.4",
+    "@react-three/fiber": "^9.1.0",
+    "framer-motion": "^12.4.11",
+    "next": "^13.5.8",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "three": "^0.174.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.10",
+    "@types/react": "^19.0.10",
+    "@types/react-dom": "^19.0.4",
+    "@types/three": "^0.174.0",
+    "eslint": "^8.57.1",
+    "eslint-config-next": "^13.5.8",
+    "eslint-plugin-react-hooks": "^5.0.0-canary-7118f5dd7-20230705",
+    "typescript": "^5.8.2"
+>>>>>>> 5185817 (feat: add new components and pages for timer, three.js integration, and welcome screen)
   }
 }
