@@ -1,12 +1,17 @@
 {
   "compilerOptions": {
     "module": "CommonJS",
+<<<<<<< HEAD
     "target": "esnext",
+=======
+    "target": "ES2021",
+>>>>>>> 30cd79a (Update subproject commit to indicate a dirty state)
     "moduleResolution": "Node",
     "outDir": "dist",
     "rootDir": "src",
     "strict": true,
     "esModuleInterop": true,
+<<<<<<< HEAD
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
     "skipLibCheck": true,
@@ -15,4 +20,10 @@
   },
   "include": ["**/*"],
   "exclude": ["node_modules"]
+=======
+    "skipLibCheck": true
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "dist"]
+>>>>>>> 30cd79a (Update subproject commit to indicate a dirty state)
 }
