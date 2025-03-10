@@ -1,0 +1,1149 @@
+{
+  "version": "6.0",
+  "nxVersion": "20.5.0",
+  "pathMappings": {},
+  "nxJsonPlugins": [
+    {
+      "name": "@nx/jest/plugin",
+      "options": {
+        "targetName": "test"
+      }
+    },
+    {
+      "name": "@nx/next/plugin",
+      "options": {
+        "startTargetName": "start",
+        "buildTargetName": "build",
+        "devTargetName": "dev",
+        "serveStaticTargetName": "serve-static",
+        "buildDepsTargetName": "build-deps",
+        "watchDepsTargetName": "watch-deps"
+      }
+    }
+  ],
+  "fileMap": {
+    "nonProjectFiles": [],
+    "projectFileMap": {
+      "web": [
+        {
+          "file": "my-typing-app/apps/web/.gitignore",
+          "hash": "17053635035368931995"
+        },
+        {
+          "file": "my-typing-app/apps/web/README.md",
+          "hash": "1841608540073148912"
+        },
+        {
+          "file": "my-typing-app/apps/web/app/favicon.ico",
+          "hash": "9157999678830540297"
+        },
+        {
+          "file": "my-typing-app/apps/web/app/fonts/GeistMonoVF.woff",
+          "hash": "17799230542345324615"
+        },
+        {
+          "file": "my-typing-app/apps/web/app/fonts/GeistVF.woff",
+          "hash": "6578897518916770501"
+        },
+        {
+          "file": "my-typing-app/apps/web/app/globals.css",
+          "hash": "18293205821686026017"
+        },
+        {
+          "file": "my-typing-app/apps/web/app/layout.d.ts",
+          "hash": "486431832761380647",
+          "deps": [
+            "npm:next",
+            "npm:react"
+          ]
+        },
+        {
+          "file": "my-typing-app/apps/web/app/layout.js",
+          "hash": "16439764507273981855",
+          "deps": [
+            "npm:next"
+          ]
+        },
+        {
+          "file": "my-typing-app/apps/web/app/layout.js.map",
+          "hash": "17631782385964170008"
+        },
+        {
+          "file": "my-typing-app/apps/web/app/layout.tsx",
+          "hash": "4529673636012425356",
+          "deps": [
+            "npm:next"
+          ]
+        },
+        {
+          "file": "my-typing-app/apps/web/app/page.d.ts",
+          "hash": "11068873691711785828",
+          "deps": [
+            "npm:react"
+          ]
+        },
+        {
+          "file": "my-typing-app/apps/web/app/page.js.map",
+          "hash": "9621033479822253485"
+        },
+        {
+          "file": "my-typing-app/apps/web/app/page.module.css",
+          "hash": "5182124655088815944"
+        },
+        {
+          "file": "my-typing-app/apps/web/app/pejcz.tsx",
+          "hash": "13651969381020296619",
+          "deps": [
+            "npm:next"
+          ]
+        },
+        {
+          "file": "my-typing-app/apps/web/app/srejdz.js",
+          "hash": "16946258012845426320",
+          "deps": [
+            "npm:next"
+          ]
+        },
+        {
+          "file": "my-typing-app/apps/web/eslint.config.js",
+          "hash": "2155062306484237557"
+        },
+        {
+          "file": "my-typing-app/apps/web/next.config.js",
+          "hash": "6567081978241091914"
+        },
+        {
+          "file": "my-typing-app/apps/web/package.json",
+          "hash": "7988004475804674345",
+          "deps": [
+            "npm:@types/node",
+            "npm:@types/react",
+            "npm:@types/react-dom",
+            "npm:eslint",
+            "npm:typescript",
+            "npm:next",
+            "npm:react",
+            "npm:react-dom"
+          ]
+        },
+        {
+          "file": "my-typing-app/apps/web/public/file-text.svg",
+          "hash": "17760084710797261418"
+        },
+        {
+          "file": "my-typing-app/apps/web/public/globe.svg",
+          "hash": "110250140041414884"
+        },
+        {
+          "file": "my-typing-app/apps/web/public/next.svg",
+          "hash": "8300767200008744458"
+        },
+        {
+          "file": "my-typing-app/apps/web/public/turborepo-dark.svg",
+          "hash": "5280435613635272558"
+        },
+        {
+          "file": "my-typing-app/apps/web/public/turborepo-light.svg",
+          "hash": "9618029098646958442"
+        },
+        {
+          "file": "my-typing-app/apps/web/public/vercel.svg",
+          "hash": "6508004213753618803"
+        },
+        {
+          "file": "my-typing-app/apps/web/public/window.svg",
+          "hash": "7242562813461725307"
+        },
+        {
+          "file": "my-typing-app/apps/web/tsconfig.json",
+          "hash": "15544717613430809260"
+        }
+      ],
+      "client": [
+        {
+          "file": "my-typing-app/apps/client/.gitignore",
+          "hash": "1867017717006394117"
+        },
+        {
+          "file": "my-typing-app/apps/client/README.md",
+          "hash": "10766794746169900117"
+        },
+        {
+          "file": "my-typing-app/apps/client/eslint.config.mjs",
+          "hash": "11349616980964601162",
+          "deps": [
+            "npm:@eslint/eslintrc"
+          ]
+        },
+        {
+          "file": "my-typing-app/apps/client/next.config.d.ts",
+          "hash": "3764557047293848400",
+          "deps": [
+            "npm:next"
+          ]
+        },
+        {
+          "file": "my-typing-app/apps/client/next.config.js",
+          "hash": "6489589849572181069"
+        },
+        {
+          "file": "my-typing-app/apps/client/next.config.js.map",
+          "hash": "3363626125842036936"
+        },
+        {
+          "file": "my-typing-app/apps/client/next.config.ts",
+          "hash": "17157214668998829023",
+          "deps": [
+            "npm:next"
+          ]
+        },
+        {
+          "file": "my-typing-app/apps/client/package.json",
+          "hash": "18262564987184179073",
+          "deps": [
+            "npm:typescript",
+            "npm:@types/node",
+            "npm:@types/react",
+            "npm:@types/react-dom",
+            "npm:eslint",
+            "npm:@eslint/eslintrc",
+            "npm:react",
+            "npm:react-dom",
+            "npm:next"
+          ]
+        },
+        {
+          "file": "my-typing-app/apps/client/postcss.config.mjs",
+          "hash": "535692822154927684"
+        },
+        {
+          "file": "my-typing-app/apps/client/public/file.svg",
+          "hash": "15617830351863523835"
+        },
+        {
+          "file": "my-typing-app/apps/client/public/globe.svg",
+          "hash": "9134466864871335697"
+        },
+        {
+          "file": "my-typing-app/apps/client/public/next.svg",
+          "hash": "8300767200008744458"
+        },
+        {
+          "file": "my-typing-app/apps/client/public/vercel.svg",
+          "hash": "3007623926711696394"
+        },
+        {
+          "file": "my-typing-app/apps/client/public/window.svg",
+          "hash": "16677869292061012332"
+        },
+        {
+          "file": "my-typing-app/apps/client/src/app/favicon.ico",
+          "hash": "9157999678830540297"
+        },
+        {
+          "file": "my-typing-app/apps/client/src/app/globals.css",
+          "hash": "13803416617225302536"
+        },
+        {
+          "file": "my-typing-app/apps/client/src/app/layout.d.ts",
+          "hash": "486431832761380647",
+          "deps": [
+            "npm:next",
+            "npm:react"
+          ]
+        },
+        {
+          "file": "my-typing-app/apps/client/src/app/layout.js",
+          "hash": "10904903280981352889",
+          "deps": [
+            "npm:next"
+          ]
+        },
+        {
+          "file": "my-typing-app/apps/client/src/app/layout.js.map",
+          "hash": "4599712545959566327"
+        },
+        {
+          "file": "my-typing-app/apps/client/src/app/layout.tsx",
+          "hash": "3768300601413009371",
+          "deps": [
+            "npm:next"
+          ]
+        },
+        {
+          "file": "my-typing-app/apps/client/src/app/page.d.ts",
+          "hash": "11068873691711785828",
+          "deps": [
+            "npm:react"
+          ]
+        },
+        {
+          "file": "my-typing-app/apps/client/src/app/page.js.map",
+          "hash": "3153265303259280175"
+        },
+        {
+          "file": "my-typing-app/apps/client/src/app/pejczdz.tsx",
+          "hash": "9336170553813227619",
+          "deps": [
+            "npm:next"
+          ]
+        },
+        {
+          "file": "my-typing-app/apps/client/src/app/srejdz.js",
+          "hash": "5927304294690405561",
+          "deps": [
+            "npm:next"
+          ]
+        },
+        {
+          "file": "my-typing-app/apps/client/tsconfig.json",
+          "hash": "4965826641429490352"
+        }
+      ],
+      "super-typer": [
+        {
+          "file": "# Code Citations.md",
+          "hash": "16165314411726180822"
+        },
+        {
+          "file": ".eslintrc.cjs",
+          "hash": "14908387179776694053"
+        },
+        {
+          "file": ".gitignore",
+          "hash": "3805179966068506943"
+        },
+        {
+          "file": ".prettierrc",
+          "hash": "8111793973470708470"
+        },
+        {
+          "file": "README.md",
+          "hash": "3654788711974826996"
+        },
+        {
+          "file": "eslint.config.mjs",
+          "hash": "12514250526457513981",
+          "deps": [
+            "npm:@eslint/js",
+            "npm:eslint-plugin-prettier",
+            "npm:globals",
+            "npm:typescript-eslint"
+          ]
+        },
+        {
+          "file": "my-typing-app/.gitignore",
+          "hash": "11686763406958944468"
+        },
+        {
+          "file": "my-typing-app/.npmrc",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "my-typing-app/README.md",
+          "hash": "14951399327508105344"
+        },
+        {
+          "file": "my-typing-app/apps/server/.gitignore",
+          "hash": "12634402967133909834"
+        },
+        {
+          "file": "my-typing-app/apps/server/.prettierrc",
+          "hash": "5008776440579340246"
+        },
+        {
+          "file": "my-typing-app/apps/server/README.md",
+          "hash": "3654788711974826996"
+        },
+        {
+          "file": "my-typing-app/apps/server/eslint.config.mjs",
+          "hash": "12514250526457513981",
+          "deps": [
+            "npm:@eslint/js",
+            "npm:eslint-plugin-prettier",
+            "npm:globals",
+            "npm:typescript-eslint"
+          ]
+        },
+        {
+          "file": "my-typing-app/apps/server/nest-cli.json",
+          "hash": "18272654682417215031"
+        },
+        {
+          "file": "my-typing-app/apps/server/package.json",
+          "hash": "2269336928425599133"
+        },
+        {
+          "file": "my-typing-app/apps/server/src/app.controller.d.ts",
+          "hash": "5918110637397830421"
+        },
+        {
+          "file": "my-typing-app/apps/server/src/app.controller.js",
+          "hash": "6150724987090056312",
+          "deps": [
+            "npm:@nestjs/common"
+          ]
+        },
+        {
+          "file": "my-typing-app/apps/server/src/app.controller.js.map",
+          "hash": "2129839714278513499"
+        },
+        {
+          "file": "my-typing-app/apps/server/src/app.controller.spec.d.ts",
+          "hash": "4595979742548113990"
+        },
+        {
+          "file": "my-typing-app/apps/server/src/app.controller.spec.js",
+          "hash": "13893066522936659293",
+          "deps": [
+            "npm:@nestjs/testing"
+          ]
+        },
+        {
+          "file": "my-typing-app/apps/server/src/app.controller.spec.js.map",
+          "hash": "7963960757766689372"
+        },
+        {
+          "file": "my-typing-app/apps/server/src/app.controller.spec.ts",
+          "hash": "3407876829745233448",
+          "deps": [
+            "npm:@nestjs/testing"
+          ]
+        },
+        {
+          "file": "my-typing-app/apps/server/src/app.controller.ts",
+          "hash": "1345450293891055440",
+          "deps": [
+            "npm:@nestjs/common"
+          ]
+        },
+        {
+          "file": "my-typing-app/apps/server/src/app.module.d.ts",
+          "hash": "10127694934788833983"
+        },
+        {
+          "file": "my-typing-app/apps/server/src/app.module.js",
+          "hash": "6847333908458495243",
+          "deps": [
+            "npm:@nestjs/common"
+          ]
+        },
+        {
+          "file": "my-typing-app/apps/server/src/app.module.js.map",
+          "hash": "965598491995775565"
+        },
+        {
+          "file": "my-typing-app/apps/server/src/app.module.ts",
+          "hash": "4590305082660932420",
+          "deps": [
+            "npm:@nestjs/common"
+          ]
+        },
+        {
+          "file": "my-typing-app/apps/server/src/app.service.d.ts",
+          "hash": "12968058393495285153"
+        },
+        {
+          "file": "my-typing-app/apps/server/src/app.service.js",
+          "hash": "13933834681286348768",
+          "deps": [
+            "npm:@nestjs/common"
+          ]
+        },
+        {
+          "file": "my-typing-app/apps/server/src/app.service.js.map",
+          "hash": "5588607028342840379"
+        },
+        {
+          "file": "my-typing-app/apps/server/src/app.service.ts",
+          "hash": "15275323873054081339",
+          "deps": [
+            "npm:@nestjs/common"
+          ]
+        },
+        {
+          "file": "my-typing-app/apps/server/src/main.d.ts",
+          "hash": "4595979742548113990"
+        },
+        {
+          "file": "my-typing-app/apps/server/src/main.js",
+          "hash": "17549465681500376370",
+          "deps": [
+            "npm:@nestjs/core"
+          ]
+        },
+        {
+          "file": "my-typing-app/apps/server/src/main.js.map",
+          "hash": "6132634589761525947"
+        },
+        {
+          "file": "my-typing-app/apps/server/src/main.ts",
+          "hash": "8143503177558657450",
+          "deps": [
+            "npm:@nestjs/core"
+          ]
+        },
+        {
+          "file": "my-typing-app/apps/server/test/app.e2e-spec.d.ts",
+          "hash": "4595979742548113990"
+        },
+        {
+          "file": "my-typing-app/apps/server/test/app.e2e-spec.js",
+          "hash": "9961186752034604217",
+          "deps": [
+            "npm:@nestjs/testing",
+            "npm:supertest"
+          ]
+        },
+        {
+          "file": "my-typing-app/apps/server/test/app.e2e-spec.js.map",
+          "hash": "6169448410575614897"
+        },
+        {
+          "file": "my-typing-app/apps/server/test/app.e2e-spec.ts",
+          "hash": "158522780483466152",
+          "deps": [
+            "npm:@nestjs/testing",
+            "npm:@nestjs/common",
+            "npm:supertest"
+          ]
+        },
+        {
+          "file": "my-typing-app/apps/server/test/jest-e2e.json",
+          "hash": "10645908491471703423"
+        },
+        {
+          "file": "my-typing-app/apps/server/tsconfig.build.json",
+          "hash": "9666801268768259513"
+        },
+        {
+          "file": "my-typing-app/apps/server/tsconfig.json",
+          "hash": "10955898322962523846"
+        },
+        {
+          "file": "my-typing-app/package-lock.json",
+          "hash": "16669061295595515879"
+        },
+        {
+          "file": "my-typing-app/package.json",
+          "hash": "5566236448837341687"
+        },
+        {
+          "file": "my-typing-app/packages/eslint-config/README.md",
+          "hash": "13754227653957484045"
+        },
+        {
+          "file": "my-typing-app/packages/eslint-config/base.js",
+          "hash": "13415738514823582499",
+          "deps": [
+            "npm:@eslint/js",
+            "npm:eslint-config-prettier",
+            "npm:typescript-eslint"
+          ]
+        },
+        {
+          "file": "my-typing-app/packages/eslint-config/next.js",
+          "hash": "1701758249198137906",
+          "deps": [
+            "npm:@eslint/js",
+            "npm:eslint-config-prettier",
+            "npm:typescript-eslint",
+            "npm:globals"
+          ]
+        },
+        {
+          "file": "my-typing-app/packages/eslint-config/package.json",
+          "hash": "1745300510731576280"
+        },
+        {
+          "file": "my-typing-app/packages/eslint-config/react-internal.js",
+          "hash": "3207875352665207252",
+          "deps": [
+            "npm:@eslint/js",
+            "npm:eslint-config-prettier",
+            "npm:typescript-eslint",
+            "npm:globals"
+          ]
+        },
+        {
+          "file": "my-typing-app/packages/typescript-config/base.json",
+          "hash": "16582354637600534236"
+        },
+        {
+          "file": "my-typing-app/packages/typescript-config/nextjs.json",
+          "hash": "5420817179880079656"
+        },
+        {
+          "file": "my-typing-app/packages/typescript-config/package.json",
+          "hash": "471180667494266307"
+        },
+        {
+          "file": "my-typing-app/packages/typescript-config/react-library.json",
+          "hash": "15305099616913920141"
+        },
+        {
+          "file": "my-typing-app/packages/ui/eslint.config.mjs",
+          "hash": "5418178612699070611"
+        },
+        {
+          "file": "my-typing-app/packages/ui/package.json",
+          "hash": "1148212879013596595"
+        },
+        {
+          "file": "my-typing-app/packages/ui/src/button.d.ts",
+          "hash": "1008689698792706397",
+          "deps": [
+            "npm:react"
+          ]
+        },
+        {
+          "file": "my-typing-app/packages/ui/src/button.js",
+          "hash": "6539739462761854163"
+        },
+        {
+          "file": "my-typing-app/packages/ui/src/button.js.map",
+          "hash": "7150052708588484051"
+        },
+        {
+          "file": "my-typing-app/packages/ui/src/button.tsx",
+          "hash": "2754452512218986212",
+          "deps": [
+            "npm:react"
+          ]
+        },
+        {
+          "file": "my-typing-app/packages/ui/src/card.d.ts",
+          "hash": "15095726306306840379",
+          "deps": [
+            "npm:react"
+          ]
+        },
+        {
+          "file": "my-typing-app/packages/ui/src/card.js",
+          "hash": "9620204948694697499"
+        },
+        {
+          "file": "my-typing-app/packages/ui/src/card.js.map",
+          "hash": "9122343502658959093"
+        },
+        {
+          "file": "my-typing-app/packages/ui/src/card.tsx",
+          "hash": "10612423921115029066",
+          "deps": [
+            "npm:react"
+          ]
+        },
+        {
+          "file": "my-typing-app/packages/ui/src/code.d.ts",
+          "hash": "7907603566790928218",
+          "deps": [
+            "npm:react"
+          ]
+        },
+        {
+          "file": "my-typing-app/packages/ui/src/code.js",
+          "hash": "1413536295038444810"
+        },
+        {
+          "file": "my-typing-app/packages/ui/src/code.js.map",
+          "hash": "5537064604859279760"
+        },
+        {
+          "file": "my-typing-app/packages/ui/src/code.tsx",
+          "hash": "12784955322640527990",
+          "deps": [
+            "npm:react"
+          ]
+        },
+        {
+          "file": "my-typing-app/packages/ui/tsconfig.json",
+          "hash": "701843663225452563"
+        },
+        {
+          "file": "my-typing-app/packages/ui/turbo/generators/config.d.ts",
+          "hash": "4212910887035765884"
+        },
+        {
+          "file": "my-typing-app/packages/ui/turbo/generators/config.js",
+          "hash": "17595515429664513273"
+        },
+        {
+          "file": "my-typing-app/packages/ui/turbo/generators/config.js.map",
+          "hash": "15351180391333766586"
+        },
+        {
+          "file": "my-typing-app/packages/ui/turbo/generators/config.ts",
+          "hash": "5649977354584388198"
+        },
+        {
+          "file": "my-typing-app/packages/ui/turbo/generators/templates/component.hbs",
+          "hash": "14936219526392690498"
+        },
+        {
+          "file": "my-typing-app/turbo.json",
+          "hash": "16229782135614367644"
+        },
+        {
+          "file": "nest-cli.json",
+          "hash": "18272654682417215031"
+        },
+        {
+          "file": "nx.json",
+          "hash": "17952869703518634382"
+        },
+        {
+          "file": "package-lock.json",
+          "hash": "9698047379282859649"
+        },
+        {
+          "file": "package.json",
+          "hash": "3266745127014007184",
+          "deps": [
+            "npm:@eslint/eslintrc",
+            "npm:@eslint/js",
+            "npm:@nestjs/cli",
+            "npm:@nestjs/common",
+            "npm:@nestjs/core",
+            "npm:@nestjs/platform-express",
+            "npm:@nestjs/schematics",
+            "npm:@nestjs/testing",
+            "npm:@nx/eslint",
+            "npm:@nx/jest",
+            "npm:@nx/next",
+            "npm:@swc/cli",
+            "npm:@swc/core",
+            "npm:@types/express",
+            "npm:@types/jest",
+            "npm:@types/node",
+            "npm:@types/supertest",
+            "npm:@typescript-eslint/eslint-plugin",
+            "npm:@typescript-eslint/parser",
+            "npm:eslint",
+            "npm:eslint-config-prettier",
+            "npm:eslint-plugin-prettier",
+            "npm:globals",
+            "npm:jest",
+            "npm:nodemon",
+            "npm:nx",
+            "npm:prettier",
+            "npm:source-map-support",
+            "npm:supertest",
+            "npm:ts-jest",
+            "npm:ts-loader",
+            "npm:ts-node",
+            "npm:tsconfig-paths",
+            "npm:typescript",
+            "npm:typescript-eslint",
+            "npm:@nestjs/jwt",
+            "npm:@nestjs/passport",
+            "npm:@nestjs/throttler",
+            "npm:@types/react",
+            "npm:@types/react-dom",
+            "npm:bcrypt",
+            "npm:class-transformer",
+            "npm:class-validator",
+            "npm:cors",
+            "npm:express",
+            "npm:framer-motion",
+            "npm:next",
+            "npm:passport",
+            "npm:passport-jwt",
+            "npm:passport-local",
+            "npm:react",
+            "npm:react-dom",
+            "npm:reflect-metadata",
+            "npm:rxjs"
+          ]
+        },
+        {
+          "file": "prisma/schema.prisma",
+          "hash": "15045092299086762096"
+        },
+        {
+          "file": "src/admin.controller.ts",
+          "hash": "18037481436276579330",
+          "deps": [
+            "npm:@nestjs/common",
+            "npm:@nestjs/passport"
+          ]
+        },
+        {
+          "file": "src/app.controller.spec.ts",
+          "hash": "2984787461298101941",
+          "deps": [
+            "npm:@nestjs/testing"
+          ]
+        },
+        {
+          "file": "src/app.controller.ts",
+          "hash": "12932752446293203245",
+          "deps": [
+            "npm:@nestjs/common",
+            "npm:@nestjs/throttler"
+          ]
+        },
+        {
+          "file": "src/app.module.ts",
+          "hash": "5572789647211314791",
+          "deps": [
+            "npm:@nestjs/common"
+          ]
+        },
+        {
+          "file": "src/app.service.ts",
+          "hash": "16892833931858030153",
+          "deps": [
+            "npm:@nestjs/common"
+          ]
+        },
+        {
+          "file": "src/auth/auth.controller.ts",
+          "hash": "4385119257930390970",
+          "deps": [
+            "npm:@nestjs/common",
+            "npm:@nestjs/passport"
+          ]
+        },
+        {
+          "file": "src/auth/auth.module.ts",
+          "hash": "17479269379553080209",
+          "deps": [
+            "npm:@nestjs/common",
+            "npm:@nestjs/passport",
+            "npm:@nestjs/jwt"
+          ]
+        },
+        {
+          "file": "src/auth/auth.service.ts",
+          "hash": "6026930873971085179",
+          "deps": [
+            "npm:@nestjs/common",
+            "npm:@nestjs/jwt",
+            "npm:bcrypt"
+          ]
+        },
+        {
+          "file": "src/auth/roles.decorator.ts",
+          "hash": "5293917905643579840",
+          "deps": [
+            "npm:@nestjs/common"
+          ]
+        },
+        {
+          "file": "src/auth/roles.guard.ts",
+          "hash": "10118351055228857204",
+          "deps": [
+            "npm:@nestjs/common",
+            "npm:@nestjs/core"
+          ]
+        },
+        {
+          "file": "src/auth/strategies/jwt.strategy.ts",
+          "hash": "17490360058426399499",
+          "deps": [
+            "npm:@nestjs/common",
+            "npm:@nestjs/passport",
+            "npm:passport-jwt"
+          ]
+        },
+        {
+          "file": "src/auth/strategies/local.strategy.ts",
+          "hash": "3462402700138766900",
+          "deps": [
+            "npm:passport-local",
+            "npm:@nestjs/passport",
+            "npm:@nestjs/common"
+          ]
+        },
+        {
+          "file": "src/controllers/stats.controller.ts",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "src/course/course.controller.ts",
+          "hash": "10571203682682479979",
+          "deps": [
+            "npm:@nestjs/common"
+          ]
+        },
+        {
+          "file": "src/course/course.module.ts",
+          "hash": "6604749960559476320",
+          "deps": [
+            "npm:@nestjs/common"
+          ]
+        },
+        {
+          "file": "src/course/course.service.ts",
+          "hash": "17747051631941336412",
+          "deps": [
+            "npm:@nestjs/common"
+          ]
+        },
+        {
+          "file": "src/dto/stats.dto.ts",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "src/index.ts",
+          "hash": "14179657012118329186",
+          "deps": [
+            "npm:express",
+            "npm:cors"
+          ]
+        },
+        {
+          "file": "src/lesson/lesson.controller.ts",
+          "hash": "572342130077279294",
+          "deps": [
+            "npm:@nestjs/common"
+          ]
+        },
+        {
+          "file": "src/lesson/lesson.module.ts",
+          "hash": "10222023229506053127",
+          "deps": [
+            "npm:@nestjs/common"
+          ]
+        },
+        {
+          "file": "src/lesson/lesson.service.ts",
+          "hash": "2690061997415235340",
+          "deps": [
+            "npm:@nestjs/common"
+          ]
+        },
+        {
+          "file": "src/main.ts",
+          "hash": "13152905053613443572",
+          "deps": [
+            "npm:@nestjs/common",
+            "npm:class-validator"
+          ]
+        },
+        {
+          "file": "src/prisma.service.ts",
+          "hash": "338934476582133308",
+          "deps": [
+            "npm:@nestjs/common"
+          ]
+        },
+        {
+          "file": "src/profile.controller.ts",
+          "hash": "5815015847807963444",
+          "deps": [
+            "npm:@nestjs/common",
+            "npm:@nestjs/passport"
+          ]
+        },
+        {
+          "file": "src/services/stats.service.ts",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "src/typing-result/typing-result.controller.ts",
+          "hash": "10428677761364543693",
+          "deps": [
+            "npm:@nestjs/common"
+          ]
+        },
+        {
+          "file": "src/typing-result/typing-result.module.ts",
+          "hash": "12952589292097575176",
+          "deps": [
+            "npm:@nestjs/common"
+          ]
+        },
+        {
+          "file": "src/typing-result/typing-result.service.ts",
+          "hash": "16645217821747029381",
+          "deps": [
+            "npm:@nestjs/common"
+          ]
+        },
+        {
+          "file": "src/users/users.controller.ts",
+          "hash": "3692864081156534279",
+          "deps": [
+            "npm:@nestjs/common"
+          ]
+        },
+        {
+          "file": "src/users/users.module.ts",
+          "hash": "2446163346284384872",
+          "deps": [
+            "npm:@nestjs/common"
+          ]
+        },
+        {
+          "file": "src/users/users.service.ts",
+          "hash": "15042087313027591982",
+          "deps": [
+            "npm:@nestjs/common",
+            "npm:bcrypt"
+          ]
+        },
+        {
+          "file": "test/app.e2e-spec.ts",
+          "hash": "6364511176039059650",
+          "deps": [
+            "npm:@nestjs/testing",
+            "npm:@nestjs/common",
+            "npm:supertest"
+          ]
+        },
+        {
+          "file": "test/jest-e2e.json",
+          "hash": "10645908491471703423"
+        },
+        {
+          "file": "tsconfig.build.json",
+          "hash": "2898489750129515001"
+        },
+        {
+          "file": "tsconfig.build.tsbuildinfo",
+          "hash": "5767091202930961076"
+        },
+        {
+          "file": "tsconfig.json",
+          "hash": "14925563979392859985"
+        }
+      ],
+      "docs": [
+        {
+          "file": "my-typing-app/apps/docs/.gitignore",
+          "hash": "17053635035368931995"
+        },
+        {
+          "file": "my-typing-app/apps/docs/README.md",
+          "hash": "1841608540073148912"
+        },
+        {
+          "file": "my-typing-app/apps/docs/app/favicon.ico",
+          "hash": "9157999678830540297"
+        },
+        {
+          "file": "my-typing-app/apps/docs/app/fonts/GeistMonoVF.woff",
+          "hash": "17799230542345324615"
+        },
+        {
+          "file": "my-typing-app/apps/docs/app/fonts/GeistVF.woff",
+          "hash": "6578897518916770501"
+        },
+        {
+          "file": "my-typing-app/apps/docs/app/globals.css",
+          "hash": "18293205821686026017"
+        },
+        {
+          "file": "my-typing-app/apps/docs/app/layout.d.ts",
+          "hash": "486431832761380647",
+          "deps": [
+            "npm:next",
+            "npm:react"
+          ]
+        },
+        {
+          "file": "my-typing-app/apps/docs/app/layout.js",
+          "hash": "16439764507273981855",
+          "deps": [
+            "npm:next"
+          ]
+        },
+        {
+          "file": "my-typing-app/apps/docs/app/layout.js.map",
+          "hash": "17631782385964170008"
+        },
+        {
+          "file": "my-typing-app/apps/docs/app/layout.tsx",
+          "hash": "4529673636012425356",
+          "deps": [
+            "npm:next"
+          ]
+        },
+        {
+          "file": "my-typing-app/apps/docs/app/page.d.ts",
+          "hash": "11068873691711785828",
+          "deps": [
+            "npm:react"
+          ]
+        },
+        {
+          "file": "my-typing-app/apps/docs/app/page.js.map",
+          "hash": "4673622830642392809"
+        },
+        {
+          "file": "my-typing-app/apps/docs/app/page.module.css",
+          "hash": "5182124655088815944"
+        },
+        {
+          "file": "my-typing-app/apps/docs/app/pejdzek.tsx",
+          "hash": "9735860813214568700",
+          "deps": [
+            "npm:next"
+          ]
+        },
+        {
+          "file": "my-typing-app/apps/docs/app/srejdzgge.js",
+          "hash": "12057558800997581016",
+          "deps": [
+            "npm:next"
+          ]
+        },
+        {
+          "file": "my-typing-app/apps/docs/eslint.config.js",
+          "hash": "2155062306484237557"
+        },
+        {
+          "file": "my-typing-app/apps/docs/next.config.js",
+          "hash": "6567081978241091914"
+        },
+        {
+          "file": "my-typing-app/apps/docs/package.json",
+          "hash": "15077241660135351056",
+          "deps": [
+            "npm:@types/node",
+            "npm:@types/react",
+            "npm:@types/react-dom",
+            "npm:eslint",
+            "npm:typescript",
+            "npm:next",
+            "npm:react",
+            "npm:react-dom"
+          ]
+        },
+        {
+          "file": "my-typing-app/apps/docs/public/file-text.svg",
+          "hash": "17760084710797261418"
+        },
+        {
+          "file": "my-typing-app/apps/docs/public/globe.svg",
+          "hash": "110250140041414884"
+        },
+        {
+          "file": "my-typing-app/apps/docs/public/next.svg",
+          "hash": "8300767200008744458"
+        },
+        {
+          "file": "my-typing-app/apps/docs/public/turborepo-dark.svg",
+          "hash": "5280435613635272558"
+        },
+        {
+          "file": "my-typing-app/apps/docs/public/turborepo-light.svg",
+          "hash": "9618029098646958442"
+        },
+        {
+          "file": "my-typing-app/apps/docs/public/vercel.svg",
+          "hash": "6508004213753618803"
+        },
+        {
+          "file": "my-typing-app/apps/docs/public/window.svg",
+          "hash": "7242562813461725307"
+        },
+        {
+          "file": "my-typing-app/apps/docs/tsconfig.json",
+          "hash": "15544717613430809260"
+        }
+      ]
+    }
+  }
+}

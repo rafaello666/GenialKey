@@ -1,20 +1,14 @@
 {
-  "extends": "../tsconfig.json",
   "compilerOptions": {
-    // Katalog wyjściowy (po kompilacji NestJS)
+    "module": "CommonJS",
+    "target": "ES2021",
+    "moduleResolution": "Node",
     "outDir": "dist",
-
-    // Główny katalog źródeł
     "rootDir": "src",
-
-    // CommonJS zwykle preferowany dla NestJS, 
-    // choć można użyć 'node16' lub 'nodenext' w nowszych wersjach.
-    "module": "commonjs",
-
-    // Aby można było importować pliki JSON
-    "resolveJsonModule": true
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true
   },
-  // Kompilujemy tylko folder src wewnątrz 'server'
   "include": ["src/**/*"],
-  "exclude": ["node_modules", "dist", "**/*.spec.ts"]
+  "exclude": ["node_modules", "dist"]
 }
