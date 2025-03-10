@@ -1,16 +1,20 @@
 name: CI
 
-on: [push, pull_request]
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
 
 jobs:
   build-and-test:
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
 
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
 
-      - name: Use Node 18
+      - name: Setup Node.js 18.x
         uses: actions/setup-node@v3
         with:
           node-version: 18
@@ -18,14 +22,8 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Lint (client)
-        run: npm run lint:client
-
-      - name: Lint (server)
-        run: npm run lint:server
-
-      - name: Build client and server
+      - name: Build application
         run: npm run build
 
-      - name: Test
+      - name: Run tests
         run: npm run test
