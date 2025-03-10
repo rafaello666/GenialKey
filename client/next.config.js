@@ -1,10 +1,11 @@
-import type { NextConfig } from "next";
+const path = require('path');
 
-const nextConfig: NextConfig = {
-  /* config options here */
+const nextConfig = {
+  reactStrictMode: true,
+  webpack: (config) => {
+    config.resolve.fallback = { fs: false };
+    return config;
+  }
 };
-module.exports = {
-   trailingSlash: true
-  
-};
-export default nextConfig;
+
+module.exports = nextConfig;

@@ -1,28 +1,26 @@
 {
-    "compilerOptions": {
-      // Kompatybilny target JS (możesz użyć np. ES2020, ESNext w zależności od potrzeb)
-      "target": "ES2020", 
-      // Sposób ładowania modułów - CommonJS dla Node, 
-      // ale tutaj trzymamy ogólną konfigurację. 
-      // Dla frontendu (Next) i tak nadpisujemy w "extends".
-      "module": "commonjs",
-  
-      // Biblioteki wbudowane
-      "lib": ["ES2020", "DOM"],
-  
-      // Wymusza ścisły tryb typowania
-      "strict": true,
-  
-      // Ułatwia importowanie plików ES
-      "esModuleInterop": true,
-  
-      // Pomija sprawdzanie zgodności typów w plikach definicji *.d.ts
-      "skipLibCheck": true,
-  
-      // Chroni przed mieszaniem się wielkości liter w ścieżkach
-      "forceConsistentCasingInFileNames": true
-    },
-    // Wykluczamy node_modules i ewentualne foldery build
-    "exclude": ["node_modules", "**/dist", "**/.next"]
-  }
-  
+  "compilerOptions": {
+    "module": "CommonJS",
+    "target": "ES2022",
+    "lib": ["ES2022", "DOM"],
+    "moduleResolution": "node",
+    "rootDir": ".", // set to the project root to encompass both 'client' and 'server'
+    "outDir": "dist",
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "sourceMap": true,
+    "strict": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true
+  },
+  "include": [
+    "client/**/*",
+    "server/**/*"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist"
+  ]
+}
