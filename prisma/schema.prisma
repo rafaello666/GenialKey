@@ -1,0 +1,62 @@
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+enum UserRole {
+  USER
+  ADMIN
+}
+model User {
+  id             Int             @id @default(autoincrement())
+  email          String          @unique
+  username       String          @unique
+  passwordHash   String
+  role           UserRole        @default(ADMIN)
+  typingResults  TypingResult[]
+  createdAt      DateTime        @default(now())
+  updatedAt      DateTime        @updatedAt
+}
+
+model Course {
+  id        Int      @id @default(autoincrement())
+  title     String
+  // Przykładowy opis, może być dłuższy tekst
+  description String?
+  // Relacja z Lesson
+  lessons   Lesson[]
+  // Pole pomocnicze do zarządzania datą utworzenia/modyfikacji
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model Lesson {
+  id        Int      @id @default(autoincrement())
+  title     String
+  content   String
+  // Relacja do Course: Lesson -> Course (wiele lekcji w jednym kursie)
+  course    Course   @relation(fields: [courseId], references: [id])
+  courseId  Int
+  // Można dodać relację do TypingResult (wiele wyników na jedną lekcję)
+  typingResults TypingResult[]
+  createdAt  DateTime @default(now())
+  updatedAt  DateTime @updatedAt
+}
+
+model TypingResult {
+  id        Int      @id @default(autoincrement())
+  // Ile znaków na minutę, jakiś wynik procentowy itd.
+  wpm       Int      // Words per minute
+  accuracy  Float    // np. 0.95 oznacza 95%
+  // Referencja do User
+  user      User     @relation(fields: [userId], references: [id])
+  userId    Int
+  // Referencja do Lesson
+  lesson    Lesson   @relation(fields: [lessonId], references: [id])
+  lessonId  Int
+  // Dodatkowe pole np. data wykonania
+  createdAt DateTime @default(now())
+}
