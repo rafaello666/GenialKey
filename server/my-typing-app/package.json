@@ -1,0 +1,28 @@
+{
+  "name": "my-typing-app",
+  "private": true,
+  "scripts": {
+    "build": "turbo run build",
+    "dev": "next dev --port 3001",
+    "serve": "run-many target=serve projects=server,client parallel",
+    "lint": "turbo run lint",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "check-types": "turbo run check-types"
+  },
+  "devDependencies": {
+    "prettier": "^3.5.3",
+    "turbo": "^2.4.4",
+    "typescript": "5.8.2"
+  },
+  "dependencies": {
+    "framer-motion": "^12.4.10"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "packageManager": "npm@11.2.0",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ]
+}

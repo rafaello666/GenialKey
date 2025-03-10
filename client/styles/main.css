@@ -1,0 +1,171 @@
+/* Podstawowa stylizacja aplikacji */
+.App {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    background: #f5f5f5;
+    color: #333;
+  }
+  
+  /* Nagłówek aplikacji */
+  .App-header {
+    background-color: #282c34; /* ciemne tło */
+    padding: 2rem;
+    color: #fff;
+  }
+  
+  /* Efekt przypominający maszynę do pisania (typewriter) */
+  .typewriter {
+    display: inline-block;
+    overflow: hidden;
+    /* dla czytelności warto ustawić szerokość:
+       width: 30ch; – w przykładowym designie można też ustawiać
+       width dynamicznie lub przez media queries */
+    white-space: nowrap;
+    border-right: 0.15em solid rgba(255, 255, 255, 0.75);
+    animation: typing 3.5s steps(40, end), blink-caret 0.8s step-end infinite;
+    margin: 2rem auto;
+  }
+  
+  /* Kluczowe klatki animacji "typing" */
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+  
+  /* Kluczowe klatki animacji "blink-caret" */
+  @keyframes blink-caret {
+    50% {
+      border-color: transparent;
+    }
+  }
+  
+  /* Nagłówki h1 w stylu hero */
+  .App-header h1 {
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+  }
+  
+  /* Akapity */
+  .App-header p {
+    font-size: 1.125rem;
+    margin: 0.5rem 0;
+  }
+  
+  /* Możesz dostosować przyciski np. do ćwiczeń typu "Start", "Powtórz" */
+  .button {
+    background-color: #61dafb;
+    color: #282c34;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    margin: 1rem;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    border-radius: 4px;
+  }
+  
+  .button:hover {
+    background-color: #21a1f1;
+  }
+  /* Kontener do ogarnięcia szerokości / responsywności */
+.scoreboard-container {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 1rem;
+    background-color: #ffffff;
+    border-radius: 4px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  }
+  
+  /* Nagłówek */
+  .scoreboard-container h2 {
+    text-align: left;
+    margin-bottom: 1rem;
+  }
+  
+  /* Tabela */
+  .scoreboard-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .scoreboard-table thead {
+    background-color: #282c34;
+    color: #fff;
+  }
+  
+  .scoreboard-table th,
+  .scoreboard-table td {
+    padding: 0.75rem 1rem;
+    text-align: left;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .scoreboard-table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .scoreboard-table tbody tr:hover {
+    background-color: #f1f1f1;
+  }
+  /* Overlay - półprzezroczyste tło */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999; /* priorytet na wierzchu */
+  }
+  
+  /* Główne "okno" modala */
+  .modal-content {
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 6px;
+    width: 400px;
+    max-width: 90%;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+    position: relative; /* w razie potrzeby animacji */
+  }
+  
+  /* Przyciski w modalach */
+  .modal-buttons {
+    margin-top: 1rem;
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .modal-buttons button {
+    flex: 1;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  .progress-bar-container {
+    width: 100%;
+    height: 10px;
+    background-color: #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  
+  .progress-bar-fill {
+    height: 100%;
+    background-color: #61dafb;
+    transition: width 0.3s ease;
+  }
+  
+  

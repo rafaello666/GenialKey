@@ -1,0 +1,54 @@
+.summaryScreen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+    background: #fff7e8; /* np. jasne tło kremowe */
+  }
+  
+  .summaryScreen h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .summaryScreen p {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .actions {
+    margin-top: 2rem;
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .primaryButton {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    font-weight: bold;
+  }
+  
+  .primaryButton:hover {
+    background-color: #449d47;
+  }
+  
+  .secondaryButton {
+    background-color: #fff;
+    color: #4caf50;
+    padding: 0.75rem 1.5rem;
+    border: 2px solid #4caf50;
+    cursor: pointer;
+    border-radius: 4px;
+    font-weight: bold;
+  }
+  
+  .secondaryButton:hover {
+    background-color: #fafafa;
+  }
+  

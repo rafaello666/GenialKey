@@ -1,0 +1,371 @@
+{
+  "errors": [
+    {
+      "stack": " - apps/server/package.json: Error: ValueExpected in C:\\super-typer\\super-typer\\server\\my-typing-app\\apps\\server\\package.json at 22:3\n  20 |     \"test:e2e\": \"jest --config ./test/jest-e2e.json\",\n  21 |     \"dev\":\n> 22 |   },\n     |   ^\n  23 |   \"dependencies\": {\n  24 |     \"@nestjs/common\": \"^11.0.1\",\n  25 |     \"@nestjs/core\": \"^11.0.1\",\n\n    at parseJson (C:\\super-typer\\super-typer\\server\\node_modules\\nx\\src\\utils\\json.js:29:15)\n    at readJsonFile (C:\\super-typer\\super-typer\\server\\node_modules\\nx\\src\\utils\\fileutils.js:32:37)\n    at createNodeFromPackageJson (C:\\super-typer\\super-typer\\server\\node_modules\\nx\\src\\plugins\\package-json\\create-nodes.js:83:47)\n    at C:\\super-typer\\super-typer\\server\\node_modules\\nx\\src\\plugins\\package-json\\create-nodes.js:40:20\n    at C:\\super-typer\\super-typer\\server\\node_modules\\nx\\src\\project-graph\\plugins\\utils.js:10:33\n    at Array.map (<anonymous>)\n    at createNodesFromFiles (C:\\super-typer\\super-typer\\server\\node_modules\\nx\\src\\project-graph\\plugins\\utils.js:8:35)\n    at exports.createNodesV2 (C:\\super-typer\\super-typer\\server\\node_modules\\nx\\src\\plugins\\package-json\\create-nodes.js:33:51)\n    at LoadedNxPlugin.createNodes (C:\\super-typer\\super-typer\\server\\node_modules\\nx\\src\\project-graph\\plugins\\loaded-nx-plugin.js:26:65)\n    at LoadedNxPlugin.createNodes.<computed> (C:\\super-typer\\super-typer\\server\\node_modules\\nx\\src\\project-graph\\plugins\\loaded-nx-plugin.js:36:34)",
+      "message": "An error occurred while processing files for the nx/core/package-json plugin\n.\n  - apps/server/package.json: ValueExpected in C:\\super-typer\\super-typer\\server\\my-typing-app\\apps\\server\\package.json at 22:3\n  20 |     \"test:e2e\": \"jest --config ./test/jest-e2e.json\",\n  21 |     \"dev\":\n> 22 |   },\n     |   ^\n  23 |   \"dependencies\": {\n  24 |     \"@nestjs/common\": \"^11.0.1\",\n  25 |     \"@nestjs/core\": \"^11.0.1\",\n",
+      "errors": [
+        [
+          "apps/server/package.json",
+          {
+            "stack": "Error: ValueExpected in C:\\super-typer\\super-typer\\server\\my-typing-app\\apps\\server\\package.json at 22:3\n  20 |     \"test:e2e\": \"jest --config ./test/jest-e2e.json\",\n  21 |     \"dev\":\n> 22 |   },\n     |   ^\n  23 |   \"dependencies\": {\n  24 |     \"@nestjs/common\": \"^11.0.1\",\n  25 |     \"@nestjs/core\": \"^11.0.1\",\n\n    at parseJson (C:\\super-typer\\super-typer\\server\\node_modules\\nx\\src\\utils\\json.js:29:15)\n    at readJsonFile (C:\\super-typer\\super-typer\\server\\node_modules\\nx\\src\\utils\\fileutils.js:32:37)\n    at createNodeFromPackageJson (C:\\super-typer\\super-typer\\server\\node_modules\\nx\\src\\plugins\\package-json\\create-nodes.js:83:47)\n    at C:\\super-typer\\super-typer\\server\\node_modules\\nx\\src\\plugins\\package-json\\create-nodes.js:40:20\n    at C:\\super-typer\\super-typer\\server\\node_modules\\nx\\src\\project-graph\\plugins\\utils.js:10:33\n    at Array.map (<anonymous>)\n    at createNodesFromFiles (C:\\super-typer\\super-typer\\server\\node_modules\\nx\\src\\project-graph\\plugins\\utils.js:8:35)\n    at exports.createNodesV2 (C:\\super-typer\\super-typer\\server\\node_modules\\nx\\src\\plugins\\package-json\\create-nodes.js:33:51)\n    at LoadedNxPlugin.createNodes (C:\\super-typer\\super-typer\\server\\node_modules\\nx\\src\\project-graph\\plugins\\loaded-nx-plugin.js:26:65)\n    at LoadedNxPlugin.createNodes.<computed> (C:\\super-typer\\super-typer\\server\\node_modules\\nx\\src\\project-graph\\plugins\\loaded-nx-plugin.js:36:34)",
+            "message": "ValueExpected in C:\\super-typer\\super-typer\\server\\my-typing-app\\apps\\server\\package.json at 22:3\n  20 |     \"test:e2e\": \"jest --config ./test/jest-e2e.json\",\n  21 |     \"dev\":\n> 22 |   },\n     |   ^\n  23 |   \"dependencies\": {\n  24 |     \"@nestjs/common\": \"^11.0.1\",\n  25 |     \"@nestjs/core\": \"^11.0.1\",\n"
+          }
+        ]
+      ],
+      "partialResults": [
+        [
+          "apps/client/package.json",
+          {
+            "projects": {
+              "apps/client": {
+                "root": "apps/client",
+                "name": "client",
+                "targets": {
+                  "dev": {
+                    "executor": "nx:run-script",
+                    "options": {
+                      "script": "dev"
+                    },
+                    "metadata": {
+                      "scriptContent": "nx dev --turbopack",
+                      "runCommand": "npm run dev"
+                    }
+                  },
+                  "build": {
+                    "executor": "nx:run-script",
+                    "options": {
+                      "script": "build"
+                    },
+                    "metadata": {
+                      "scriptContent": "nx build",
+                      "runCommand": "npm run build"
+                    }
+                  },
+                  "start": {
+                    "executor": "nx:run-script",
+                    "options": {
+                      "script": "start"
+                    },
+                    "metadata": {
+                      "scriptContent": "nx start",
+                      "runCommand": "npm run start"
+                    }
+                  },
+                  "lint": {
+                    "executor": "nx:run-script",
+                    "options": {
+                      "script": "lint"
+                    },
+                    "metadata": {
+                      "scriptContent": "next lint",
+                      "runCommand": "npm run lint"
+                    }
+                  }
+                },
+                "tags": [
+                  "npm:private"
+                ],
+                "metadata": {
+                  "targetGroups": {
+                    "NPM Scripts": [
+                      "dev",
+                      "build",
+                      "start",
+                      "lint"
+                    ]
+                  },
+                  "js": {
+                    "packageName": "client",
+                    "isInPackageManagerWorkspaces": true
+                  }
+                },
+                "projectType": "application"
+              }
+            }
+          }
+        ],
+        [
+          "apps/docs/package.json",
+          {
+            "projects": {
+              "apps/docs": {
+                "root": "apps/docs",
+                "name": "docs",
+                "targets": {
+                  "dev": {
+                    "executor": "nx:run-script",
+                    "options": {
+                      "script": "dev"
+                    },
+                    "metadata": {
+                      "scriptContent": "nx dev --turbopack --port 3001",
+                      "runCommand": "npm run dev"
+                    }
+                  },
+                  "build": {
+                    "executor": "nx:run-script",
+                    "options": {
+                      "script": "build"
+                    },
+                    "metadata": {
+                      "scriptContent": "nx build",
+                      "runCommand": "npm run build"
+                    }
+                  },
+                  "start": {
+                    "executor": "nx:run-script",
+                    "options": {
+                      "script": "start"
+                    },
+                    "metadata": {
+                      "scriptContent": "nx start",
+                      "runCommand": "npm run start"
+                    }
+                  },
+                  "lint": {
+                    "executor": "nx:run-script",
+                    "options": {
+                      "script": "lint"
+                    },
+                    "metadata": {
+                      "scriptContent": "next lint --max-warnings 0",
+                      "runCommand": "npm run lint"
+                    }
+                  },
+                  "check-types": {
+                    "executor": "nx:run-script",
+                    "options": {
+                      "script": "check-types"
+                    },
+                    "metadata": {
+                      "scriptContent": "tsc --noEmit",
+                      "runCommand": "npm run check-types"
+                    }
+                  }
+                },
+                "tags": [
+                  "npm:private"
+                ],
+                "metadata": {
+                  "targetGroups": {
+                    "NPM Scripts": [
+                      "dev",
+                      "build",
+                      "start",
+                      "lint",
+                      "check-types"
+                    ]
+                  },
+                  "js": {
+                    "packageName": "docs",
+                    "isInPackageManagerWorkspaces": true
+                  }
+                },
+                "projectType": "application"
+              }
+            }
+          }
+        ],
+        [
+          "apps/web/package.json",
+          {
+            "projects": {
+              "apps/web": {
+                "root": "apps/web",
+                "name": "web",
+                "targets": {
+                  "dev": {
+                    "executor": "nx:run-script",
+                    "options": {
+                      "script": "dev"
+                    },
+                    "metadata": {
+                      "scriptContent": "nx dev --turbopack --port 3000",
+                      "runCommand": "npm run dev"
+                    }
+                  },
+                  "build": {
+                    "executor": "nx:run-script",
+                    "options": {
+                      "script": "build"
+                    },
+                    "metadata": {
+                      "scriptContent": "nx build",
+                      "runCommand": "npm run build"
+                    }
+                  },
+                  "start": {
+                    "executor": "nx:run-script",
+                    "options": {
+                      "script": "start"
+                    },
+                    "metadata": {
+                      "scriptContent": "nx start",
+                      "runCommand": "npm run start"
+                    }
+                  },
+                  "lint": {
+                    "executor": "nx:run-script",
+                    "options": {
+                      "script": "lint"
+                    },
+                    "metadata": {
+                      "scriptContent": "next lint --max-warnings 0",
+                      "runCommand": "npm run lint"
+                    }
+                  },
+                  "check-types": {
+                    "executor": "nx:run-script",
+                    "options": {
+                      "script": "check-types"
+                    },
+                    "metadata": {
+                      "scriptContent": "tsc --noEmit",
+                      "runCommand": "npm run check-types"
+                    }
+                  }
+                },
+                "tags": [
+                  "npm:private"
+                ],
+                "metadata": {
+                  "targetGroups": {
+                    "NPM Scripts": [
+                      "dev",
+                      "build",
+                      "start",
+                      "lint",
+                      "check-types"
+                    ]
+                  },
+                  "js": {
+                    "packageName": "web",
+                    "isInPackageManagerWorkspaces": true
+                  }
+                },
+                "projectType": "application"
+              }
+            }
+          }
+        ],
+        [
+          "packages/eslint-config/package.json",
+          {
+            "projects": {
+              "packages/eslint-config": {
+                "root": "packages/eslint-config",
+                "name": "@repo/eslint-config",
+                "targets": {},
+                "tags": [
+                  "npm:private"
+                ],
+                "metadata": {
+                  "targetGroups": {},
+                  "js": {
+                    "packageName": "@repo/eslint-config",
+                    "packageExports": {
+                      "./base": "./base.js",
+                      "./next-js": "./next.js",
+                      "./react-internal": "./react-internal.js"
+                    },
+                    "isInPackageManagerWorkspaces": true
+                  }
+                }
+              }
+            }
+          }
+        ],
+        [
+          "packages/typescript-config/package.json",
+          {
+            "projects": {
+              "packages/typescript-config": {
+                "root": "packages/typescript-config",
+                "name": "@repo/typescript-config",
+                "targets": {},
+                "tags": [
+                  "npm:private"
+                ],
+                "metadata": {
+                  "targetGroups": {},
+                  "js": {
+                    "packageName": "@repo/typescript-config",
+                    "isInPackageManagerWorkspaces": true
+                  }
+                }
+              }
+            }
+          }
+        ],
+        [
+          "packages/ui/package.json",
+          {
+            "projects": {
+              "packages/ui": {
+                "root": "packages/ui",
+                "name": "@repo/ui",
+                "targets": {
+                  "lint": {
+                    "executor": "nx:run-script",
+                    "options": {
+                      "script": "lint"
+                    },
+                    "metadata": {
+                      "scriptContent": "eslint . --max-warnings 0",
+                      "runCommand": "npm run lint"
+                    }
+                  },
+                  "generate:component": {
+                    "executor": "nx:run-script",
+                    "options": {
+                      "script": "generate:component"
+                    },
+                    "metadata": {
+                      "scriptContent": "turbo gen react-component",
+                      "runCommand": "npm run generate:component"
+                    }
+                  },
+                  "check-types": {
+                    "executor": "nx:run-script",
+                    "options": {
+                      "script": "check-types"
+                    },
+                    "metadata": {
+                      "scriptContent": "tsc --noEmit",
+                      "runCommand": "npm run check-types"
+                    }
+                  }
+                },
+                "tags": [
+                  "npm:private"
+                ],
+                "metadata": {
+                  "targetGroups": {
+                    "NPM Scripts": [
+                      "lint",
+                      "generate:component",
+                      "check-types"
+                    ]
+                  },
+                  "js": {
+                    "packageName": "@repo/ui",
+                    "packageExports": {
+                      "./*": "./src/*.tsx"
+                    },
+                    "isInPackageManagerWorkspaces": true
+                  }
+                }
+              }
+            }
+          }
+        ]
+      ],
+      "name": "AggregateCreateNodesError"
+    },
+    {
+      "pluginName": "nx/js/dependencies-and-lockfile",
+      "name": "ProcessDependenciesError"
+    }
+  ],
+  "computedAt": 1741448595342
+}
