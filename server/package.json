@@ -1,6 +1,6 @@
 {
-  "name": "super-typer",
-  "version": "1.0.0",
+      "name": "super-typer-server",
+    "version": "1.0.0",
   "description": "Backend w TypeScript z Express",
   "author": "Rafik",
   "private": true,
