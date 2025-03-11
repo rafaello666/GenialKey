@@ -3,6 +3,7 @@ import Link from 'next/link';
 import styles from '../styles/WelcomeScreen.module.css';
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 import { motion } from 'framer-motion';
 
 const WelcomeScreen: React.FC = () => {
@@ -54,11 +55,17 @@ const WelcomeScreen: React.FC = () => {
 const WelcomeScreen: React.FC = () => {
   return (
 >>>>>>> 5185817 (feat: add new components and pages for timer, three.js integration, and welcome screen)
+=======
+
+const WelcomeScreen: React.FC = () => {
+  return (
+>>>>>>> 51858176c37d86a5a1b3637f910f85a822ad44a9
     <div className={styles.welcomeScreen}>
       <h1>Witaj w Aplikacji Szybkiego Pisania</h1>
       <p>
         Rozpocznij swoją przygodę z szybszym pisaniem na klawiaturze!
         Wybierz ćwiczenie, aby przejść do praktyki.
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       </p>          
@@ -70,6 +77,8 @@ export default WelcomeScreen
 =======
 =======
 >>>>>>> 5185817 (feat: add new components and pages for timer, three.js integration, and welcome screen)
+=======
+>>>>>>> 51858176c37d86a5a1b3637f910f85a822ad44a9
       </p>
 
       <div className={styles.actions}>
@@ -89,6 +98,9 @@ export default WelcomeScreen
 
 export default WelcomeScreen;
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 5185817 (feat: add new components and pages for timer, three.js integration, and welcome screen)
 =======
 >>>>>>> 5185817 (feat: add new components and pages for timer, three.js integration, and welcome screen)
+=======
+>>>>>>> 51858176c37d86a5a1b3637f910f85a822ad44a9

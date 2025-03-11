@@ -2,6 +2,7 @@
   "compilerOptions": {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     "jsx": "preserve",
     "target": "ESNext",
     "module": "ESNext",
@@ -30,6 +31,13 @@
     "jsx": "preserve",
     "allowJs": true,
 >>>>>>> 5185817 (feat: add new components and pages for timer, three.js integration, and welcome screen)
+=======
+    "module": "ESNext",
+    "target": "ES2021",
+    "moduleResolution": "Node",
+    "jsx": "preserve",
+    "allowJs": true,
+>>>>>>> 51858176c37d86a5a1b3637f910f85a822ad44a9
     "esModuleInterop": true,
     "skipLibCheck": true,
     "strict": true,
@@ -48,13 +56,17 @@
     "**/*.ts",
     "**/*.tsx"
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 5185817 (feat: add new components and pages for timer, three.js integration, and welcome screen)
 =======
 >>>>>>> 5185817 (feat: add new components and pages for timer, three.js integration, and welcome screen)
+=======
+>>>>>>> 51858176c37d86a5a1b3637f910f85a822ad44a9
   ],
   "exclude": [
     "node_modules"
   ]
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
@@ -62,4 +74,6 @@
 >>>>>>> 9eb090d (Aktualizacja konfiguracji i porządek w repozytorium)
 =======
 >>>>>>> 5185817 (feat: add new components and pages for timer, three.js integration, and welcome screen)
+=======
+>>>>>>> 51858176c37d86a5a1b3637f910f85a822ad44a9
 }

@@ -1,6 +1,7 @@
 {
   "name": "client",
 <<<<<<< HEAD
+<<<<<<< HEAD
   "version": "1.0.0",
 <<<<<<< HEAD
 =======
@@ -9,11 +10,14 @@
 >>>>>>> 9eb090d (Aktualizacja konfiguracji i porządek w repozytorium)
 =======
 >>>>>>> 5185817 (feat: add new components and pages for timer, three.js integration, and welcome screen)
+=======
+>>>>>>> 51858176c37d86a5a1b3637f910f85a822ad44a9
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
+<<<<<<< HEAD
 <<<<<<< HEAD
     "lint": "next lint",
     "test": "echo \"No tests for client yet\" && exit 0"
@@ -65,6 +69,20 @@
   },
   "devDependencies": {
 >>>>>>> 5185817 (feat: add new components and pages for timer, three.js integration, and welcome screen)
+=======
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@react-three/drei": "^10.0.4",
+    "@react-three/fiber": "^9.1.0",
+    "framer-motion": "^12.4.11",
+    "next": "^13.5.8",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "three": "^0.174.0"
+  },
+  "devDependencies": {
+>>>>>>> 51858176c37d86a5a1b3637f910f85a822ad44a9
     "@types/node": "^22.13.10",
     "@types/react": "^19.0.10",
     "@types/react-dom": "^19.0.4",
@@ -73,6 +91,7 @@
     "eslint-config-next": "^13.5.8",
     "eslint-plugin-react-hooks": "^5.0.0-canary-7118f5dd7-20230705",
     "typescript": "^5.8.2"
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 5185817 (feat: add new components and pages for timer, three.js integration, and welcome screen)
 =======
@@ -86,5 +105,7 @@
 >>>>>>> 9eb090d (Aktualizacja konfiguracji i porządek w repozytorium)
 =======
 >>>>>>> 5185817 (feat: add new components and pages for timer, three.js integration, and welcome screen)
+=======
+>>>>>>> 51858176c37d86a5a1b3637f910f85a822ad44a9
   }
 }
