@@ -4,20 +4,6 @@
   "private": true,
   "main": "dist/main.js",
   "scripts": {
-<<<<<<< HEAD
-    "start": "nest start",
-    "start:dev": "nest start --watch",
-    "build": "nest build",
-    "lint": "eslint \"src/**/*.ts\" --fix",
-    "test": "echo \"No tests for server yet\" && exit 0"
-  },
-  "dependencies": {
-    "@nestjs/common": "^10.0.0",
-    "@nestjs/core": "^10.0.0",
-    "@nestjs/platform-express": "^10.0.0",
-    "@prisma/client": "^5.0.0",
-    "bcrypt": "^5.1.0",
-=======
     "clean": "rimraf dist",
     "build": "npm run clean && nest build",
     "start": "nest start",
@@ -38,11 +24,9 @@
     "@nestjs/throttler": "^6.4.0",
     "@prisma/client": "^6.4.1",
     "bcrypt": "^5.1.1",
->>>>>>> 51858176c37d86a5a1b3637f910f85a822ad44a9
     "class-transformer": "^0.5.1",
     "class-validator": "^0.14.0",
     "cors": "^2.8.5",
-<<<<<<< HEAD
     "helmet": "^7.0.0",
     "passport": "^0.7.0",
     "passport-jwt": "^4.0.1",
@@ -50,27 +34,6 @@
     "prisma": "^5.0.0",
     "reflect-metadata": "^0.2.0",
     "rxjs": "^7.8.1"
-  },
-  "devDependencies": {
-    "@nestjs/cli": "^10.1.7",
-    "@nestjs/schematics": "^10.1.3",
-    "@nestjs/testing": "^10.0.0",
-    "@types/bcrypt": "^5.0.0",
-    "@types/cors": "^2.8.13",
-    "@types/node": "^20.5.7",
-    "@types/passport-jwt": "^3.0.8",
-    "@types/passport-local": "^1.0.36",
-    "@types/react": "^19.0.10",
-<<<<<<< HEAD
-=======
-    "express": "^4.21.2",
-    "helmet": "^8.0.0",
-    "passport": "^0.7.0",
-    "passport-jwt": "^4.0.1",
-    "passport-local": "^1.0.0",
-    "reflect-metadata": "^0.2.2",
-    "rxjs": "^7.8.2",
-    "ts-node": "^10.9.2"
   },
   "devDependencies": {
     "@nestjs/cli": "^11.0.0",
@@ -85,7 +48,6 @@
     "@types/passport-jwt": "^4.0.1",
     "@types/passport-local": "^1.0.38",
     "@types/react": "^19.0.10",
->>>>>>> 51858176c37d86a5a1b3637f910f85a822ad44a9
     "@types/react-dom": "^19.0.4",
     "@types/three": "^0.174.0",
     "eslint": "^9.22.0",
@@ -95,19 +57,22 @@
     "prisma": "^6.4.1",
     "rimraf": "^6.0.1",
     "ts-jest": "^29.2.6",
-    "typescript": "^5.8.2"
+    "typescript": "^5.8.2",
+    "express": "^4.21.2",
+    "helmet": "^8.0.0",
+    "passport": "^0.7.0",
+    "passport-jwt": "^4.0.1",
+    "passport-local": "^1.0.0",
+    "reflect-metadata": "^0.2.2",
+    "rxjs": "^7.8.2",
+    "ts-node": "^10.9.2"
   },
   "engines": {
-    "node": ">=18.0.0"
-<<<<<<< HEAD
->>>>>>> 30cd79a (Update subproject commit to indicate a dirty state)
-=======
+    "node": ">=18.0.0",
     "eslint": "^8.45.0",
     "rimraf": "^5.0.1",
     "ts-node": "^10.9.1",
     "typescript": "^5.2.2"
->>>>>>> 9eb090d (Aktualizacja konfiguracji i porządek w repozytorium)
-=======
->>>>>>> 51858176c37d86a5a1b3637f910f85a822ad44a9
+
   }
 }

@@ -1,13 +1,6 @@
 {
   "compilerOptions": {
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
     "module": "CommonJS",
->>>>>>> 5185817 (feat: add new components and pages for timer, three.js integration, and welcome screen)
-=======
-    "module": "CommonJS",
->>>>>>> 51858176c37d86a5a1b3637f910f85a822ad44a9
     "target": "ES2022",
     "lib": ["ES2022", "DOM"],
     "moduleResolution": "node",

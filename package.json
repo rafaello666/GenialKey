@@ -1,13 +1,5 @@
 {
-<<<<<<< HEAD
-<<<<<<< HEAD
-  "name": "super-typer-monorepo",
-=======
   "name": "genialkey",
->>>>>>> 5185817 (feat: add new components and pages for timer, three.js integration, and welcome screen)
-=======
-  "name": "genialkey",
->>>>>>> 51858176c37d86a5a1b3637f910f85a822ad44a9
   "version": "1.0.0",
   "private": true,
   "workspaces": [
@@ -21,35 +13,16 @@
     "test": "npm run test -w server && npm run test -w client"
   },
   "devDependencies": {
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
     "@types/bcrypt": "^5.0.2",
     "@types/cors": "^2.8.17",
     "@types/express": "^5.0.0",
     "@types/jest": "^29.5.14",
     "@types/passport-jwt": "^4.0.1",
     "@types/passport-local": "^1.0.38",
-=======
->>>>>>> 5185817 (feat: add new components and pages for timer, three.js integration, and welcome screen)
-=======
->>>>>>> 9eb090d (Aktualizacja konfiguracji i porządek w repozytorium)
     "concurrently": "^8.2.2",
-    "typescript": "^5.2.2",
-    "eslint": "^8.45.0",
-    "prettier": "^3.5.0"
-=======
-=======
->>>>>>> 51858176c37d86a5a1b3637f910f85a822ad44a9
-    "concurrently": "^8.2.2",
+    "typescript": "^5.8.2",
     "eslint": "^9.21.0",
-    "eslint-config-next": "^15.2.1",
     "prettier": "^3.5.3",
-    "typescript": "^5.8.2"
-<<<<<<< HEAD
->>>>>>> 5185817 (feat: add new components and pages for timer, three.js integration, and welcome screen)
-=======
->>>>>>> 51858176c37d86a5a1b3637f910f85a822ad44a9
+    "eslint-config-next": "^15.2.1"
   }
 }
