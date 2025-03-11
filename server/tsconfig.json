@@ -1,42 +1,21 @@
 {
   "compilerOptions": {
     "module": "CommonJS",
-    "target": "ES2021",
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> 30cd79a (Update subproject commit to indicate a dirty state)
-=======
->>>>>>> 9eb090d (Aktualizacja konfiguracji i porządek w repozytorium)
-=======
->>>>>>> 51858176c37d86a5a1b3637f910f85a822ad44a9
-    "moduleResolution": "Node",
-    "outDir": "dist",
-    "rootDir": "src",
-    "strict": true,
+    "target": "ES2022",
+    "moduleResolution": "node",
+    "outDir": "./dist",
+    "rootDir": "./src",
     "esModuleInterop": true,
-<<<<<<< HEAD
-    "skipLibCheck": true,
-    "resolveJsonModule": true,
-    "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
-    "types": ["node"] // Add this line to restrict implicit type inclusion
+    "experimentalDecorators": true,
+    "strict": true,
+    "incremental": true,
+    "isolatedModules": false,
+    "resolveJsonModule": true,
+    "sourceMap": true,
+    "skipLibCheck": true,
+    "types": ["node"]
   },
-<<<<<<< HEAD
-  "include": ["**/*"],
-  "exclude": ["node_modules"]
-=======
-=======
->>>>>>> 51858176c37d86a5a1b3637f910f85a822ad44a9
-    "skipLibCheck": true
-  },
-  "include": ["src/**/*"],
-  "exclude": ["node_modules", "dist"]
-<<<<<<< HEAD
->>>>>>> 30cd79a (Update subproject commit to indicate a dirty state)
-=======
   "include": ["src/**/*.ts"],
-  "exclude": ["node_modules", "dist", "**/*.spec.ts"]
->>>>>>> 9eb090d (Aktualizacja konfiguracji i porządek w repozytorium)
-=======
->>>>>>> 51858176c37d86a5a1b3637f910f85a822ad44a9
+  "exclude": ["node_modules", "dist", "**/*.spec.ts", "**/*.test.ts"]
 }

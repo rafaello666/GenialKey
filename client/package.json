@@ -1,111 +1,33 @@
 {
   "name": "client",
-<<<<<<< HEAD
-<<<<<<< HEAD
   "version": "1.0.0",
-<<<<<<< HEAD
-=======
->>>>>>> 5185817 (feat: add new components and pages for timer, three.js integration, and welcome screen)
-=======
->>>>>>> 9eb090d (Aktualizacja konfiguracji i porządek w repozytorium)
-=======
->>>>>>> 5185817 (feat: add new components and pages for timer, three.js integration, and welcome screen)
-=======
->>>>>>> 51858176c37d86a5a1b3637f910f85a822ad44a9
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-<<<<<<< HEAD
-<<<<<<< HEAD
     "lint": "next lint",
+    "format": "prettier --write .",
     "test": "echo \"No tests for client yet\" && exit 0"
   },
   "dependencies": {
     "next": "^14.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "framer-motion": "^11.0.0",
-    "@react-three/fiber": "^8.13.21",
-    "@react-three/drei": "^9.60.2",
-    "three": "^0.153.0"
-  },
-  "devDependencies": {
-<<<<<<< HEAD
-    "@types/babel__core": "^7.20.5",
-    "@types/bcrypt": "^5.0.2",
-    "@types/express": "^5.0.0",
-    "@types/node": "^20",
-    "@types/react": "^18",
-    "@types/react-dom": "^18",
-    "@types/three": "^0.163",
-    "@typescript-eslint/eslint-plugin": "^8.26.1",
-    "@typescript-eslint/parser": "^6.21.0",
-    "eslint": "^8.57.1",
-    "eslint-config-next": "^15.2.1",
-    "typescript": "^5"
-=======
-    "@react-three/drei": "^10.0.4",
-    "@react-three/fiber": "^9.1.0",
     "framer-motion": "^12.4.11",
-    "next": "^13.5.8",
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1",
+    "@react-three/fiber": "^9.1.0",
+    "@react-three/drei": "^10.0.4",
     "three": "^0.174.0"
   },
   "devDependencies": {
-=======
-    "lint": "next lint"
-  },
-  "dependencies": {
-    "@react-three/drei": "^10.0.4",
-    "@react-three/fiber": "^9.1.0",
-    "framer-motion": "^12.4.11",
-    "next": "^13.5.8",
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1",
-    "three": "^0.174.0"
-  },
-  "devDependencies": {
->>>>>>> 5185817 (feat: add new components and pages for timer, three.js integration, and welcome screen)
-=======
-    "lint": "next lint"
-  },
-  "dependencies": {
-    "@react-three/drei": "^10.0.4",
-    "@react-three/fiber": "^9.1.0",
-    "framer-motion": "^12.4.11",
-    "next": "^13.5.8",
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1",
-    "three": "^0.174.0"
-  },
-  "devDependencies": {
->>>>>>> 51858176c37d86a5a1b3637f910f85a822ad44a9
     "@types/node": "^22.13.10",
-    "@types/react": "^19.0.10",
-    "@types/react-dom": "^19.0.4",
-    "@types/three": "^0.174.0",
-    "eslint": "^8.57.1",
-    "eslint-config-next": "^13.5.8",
-    "eslint-plugin-react-hooks": "^5.0.0-canary-7118f5dd7-20230705",
-    "typescript": "^5.8.2"
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> 5185817 (feat: add new components and pages for timer, three.js integration, and welcome screen)
-=======
     "@types/react": "^18.2.21",
     "@types/react-dom": "^18.2.7",
-    "@types/node": "^20.5.7",
-    "@types/three": "^0.153.0",
-    "eslint": "^8.45.0",
-    "eslint-config-next": "^14.0.2",
-    "typescript": "^5.2.2"
->>>>>>> 9eb090d (Aktualizacja konfiguracji i porządek w repozytorium)
-=======
->>>>>>> 5185817 (feat: add new components and pages for timer, three.js integration, and welcome screen)
-=======
->>>>>>> 51858176c37d86a5a1b3637f910f85a822ad44a9
+    "@types/three": "^0.174.0",
+    "eslint": "^8.57.1",
+    "eslint-config-next": "^15.2.1",
+    "eslint-plugin-react-hooks": "^5.0.0-canary-7118f5dd7-20230705",
+    "prettier": "^3.5.3",
+    "typescript": "^5.8.2"
   }
 }

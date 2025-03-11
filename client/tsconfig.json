@@ -1,79 +1,19 @@
 {
   "compilerOptions": {
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
     "jsx": "preserve",
-    "target": "ESNext",
+    "target": "ES2022",
     "module": "ESNext",
-    "lib": ["dom", "dom.iterable", "esnext"],
     "moduleResolution": "node",
     "esModuleInterop": true,
     "allowJs": true,
     "strict": true,
     "skipLibCheck": true,
     "resolveJsonModule": true,
-    "noEmit": true
-  },
-<<<<<<< HEAD
-  "include": [
-    "**/*"
-=======
-    "module": "ESNext",
-    "target": "ES2021",
-    "moduleResolution": "Node",
-    "jsx": "preserve",
-    "allowJs": true,
-=======
-    "module": "ESNext",
-    "target": "ES2021",
-    "moduleResolution": "Node",
-    "jsx": "preserve",
-    "allowJs": true,
->>>>>>> 5185817 (feat: add new components and pages for timer, three.js integration, and welcome screen)
-=======
-    "module": "ESNext",
-    "target": "ES2021",
-    "moduleResolution": "Node",
-    "jsx": "preserve",
-    "allowJs": true,
->>>>>>> 51858176c37d86a5a1b3637f910f85a822ad44a9
-    "esModuleInterop": true,
-    "skipLibCheck": true,
-    "strict": true,
-    "lib": [
-      "dom",
-      "dom.iterable",
-      "esnext"
-    ],
     "noEmit": true,
     "incremental": true,
-    "resolveJsonModule": true,
-    "isolatedModules": true
+    "isolatedModules": true,
+    "lib": ["dom", "dom.iterable", "esnext"]
   },
-  "include": [
-    "next-env.d.ts",
-    "**/*.ts",
-    "**/*.tsx"
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> 5185817 (feat: add new components and pages for timer, three.js integration, and welcome screen)
-=======
->>>>>>> 5185817 (feat: add new components and pages for timer, three.js integration, and welcome screen)
-=======
->>>>>>> 51858176c37d86a5a1b3637f910f85a822ad44a9
-  ],
-  "exclude": [
-    "node_modules"
-  ]
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
-  "exclude": ["node_modules", ".next", "out", "dist"]
->>>>>>> 9eb090d (Aktualizacja konfiguracji i porządek w repozytorium)
-=======
->>>>>>> 5185817 (feat: add new components and pages for timer, three.js integration, and welcome screen)
-=======
->>>>>>> 51858176c37d86a5a1b3637f910f85a822ad44a9
+  "exclude": ["node_modules", ".next", "dist"]
 }

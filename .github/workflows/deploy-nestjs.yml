@@ -1,47 +1,51 @@
-name: Deploy NestJS to cPanel
+name: Deploy NestJS to cPanel via FTP
 
 on:
   push:
-    branches: [ 'main' ]
+    branches: ['main']
 
 jobs:
-  build_and_deploy:
+  deploy:
     runs-on: ubuntu-latest
+
     steps:
-      # 1. Sprawdź kod z repozytorium
-      - name: Check out the repo
-        uses: actions/checkout@v2
+      # Pobranie repozytorium
+      - name: Checkout repo
+        uses: actions/checkout@v4
 
-      # 2. Zainstaluj Node.js
-      - name: Setup Node
-        uses: actions/setup-node@v2
+      # Instalacja Node.js (dopasuj wersję do cPanel!)
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
         with:
-          node-version: '16' # lub inna wersja zgodna z Twoim projektem
+          node-version: '18.x'
 
-      # 3. Zainstaluj zależności
+      # Instalacja zależności (bez devDependencies!)
       - name: Install dependencies
-        run: npm ci
+        run: npm ci --omit=dev
 
-      # 4. Uruchom linter (ESLint)
-      - name: Lint code
-        run: npm run lint
-
-      # 5. Uruchom formater (Prettier)
-      - name: Format code
-        run: npm run format
-
-      # 6. Zbuduj aplikację NestJS
-      - name: Build
+      # Kompilacja aplikacji NestJS
+      - name: Build NestJS App
         run: npm run build
 
-      # 7. Wyślij przez FTP gotowy folder "dist"
+      # Tworzenie paczki produkcyjnej
+      - name: Prepare deployment package
+        run: |
+          mkdir deployment
+          cp -R dist package.json package-lock.json deployment/
+          # Jeśli używasz pliku .env, dodaj tę linię:
+          # cp .env deployment/
+
+      # Wysyłka paczki produkcyjnej przez FTP
       - name: Deploy via FTP
         uses: SamKirkland/FTP-Deploy-Action@4.3.3
         with:
           server: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
-          local-dir: dist
-          server-dir: /public_html/nest-app
-          log-level: verbose
+          local-dir: deployment/
+          server-dir: /public_html/nest-app/
+          exclude: |
+            **/node_modules/**
+            **/.git/**
+          log-level: standard
           method: ftp

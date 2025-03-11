@@ -4,8 +4,8 @@
     "target": "ES2022",
     "lib": ["ES2022", "DOM"],
     "moduleResolution": "node",
-    "rootDir": ".", // set to the project root to encompass both 'client' and 'server'
-    "outDir": "dist",
+    "rootDir": ".",
+    "outDir": "./dist",
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
     "emitDecoratorMetadata": true,
@@ -13,14 +13,11 @@
     "sourceMap": true,
     "strict": true,
     "skipLibCheck": true,
-    "forceConsistentCasingInFileNames": true
+    "forceConsistentCasingInFileNames": true,
+    "incremental": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true
   },
-  "include": [
-    "client/**/*",
-    "server/**/*"
-  ],
-  "exclude": [
-    "node_modules",
-    "dist"
-  ]
+  "include": ["client/**/*", "server/**/*"],
+  "exclude": ["node_modules", "dist", "**/*.spec.ts", "**/*.test.ts"]
 }
